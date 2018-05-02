@@ -1,5 +1,5 @@
 body {
-    background: url("website-background-edited.jpg");
+    background: url("train-station-edit.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Lato', sans-serif;
@@ -18,4 +18,9 @@ html {
 h1 {
     font-weight: 700;
     font-size: 4em;
+}
+
+.dropdown-menu.show {
+    display: block;
+    -webkit-min-logical-width: 40%;
 }
