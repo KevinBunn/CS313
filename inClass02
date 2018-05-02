@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <?php
+    for ($x = 1; $x <= 10; $x++) {
+        if ($x % 2 = 0)
+            echo "<div style="color:red">$x</div>"
+        else
+            echo "<div>$x</div>"
+    }
+</body>
+</html>
