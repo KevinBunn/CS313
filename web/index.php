@@ -7,22 +7,71 @@
     <meta name="description" content="The HTML5 Herald">
     <meta name="author" content="SitePoint">
 
-    <link rel="stylesheet" href="css/homepage.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/homepage.css">
 </head>
 <body>
+    
+    <!-- Bootstrap Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div>
-                    <h1>Kevin's Homepage</h1>
-                    <h3>Information Here Maybe</h3>
-                    <hr>
-                    <button class="btn btn-default btn-lg">Click Here For Assignments</button>
-                </div>
+        <a class="navbar-brand" href="#">CS313 Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  About Me
+              </a>
+              <div class="dropdown-menu p-4 text-muted">
+                  <?php
+                    $string = file_get_contents("text.json");
+                    $json = json_decode($string, true);
+                  
+                    echo "<p>$json['AboutMeFirst'][text]</p>";
+                    echo "<p>$json['AboutMeSecond'][text]</p>"
+                   ?>
+              </div>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Assignments</a>
+            </li>
+          </ul>
+        </div>
+    </div>
+</nav>
+    
+    <!-- Php "where are we" prompt -->
+<div class="container" id="location-container">
+    <div class="row justify-content-end">
+        <div class="col-3">
+            <div class="dropdown-menu">
+                <span id="location-dropdown">Where are we?</span>
             </div>
         </div>
     </div>
+</div>
+    
+    <!-- Main Text -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <div id="content">
+                <h1>Kevin's Homepage</h1>
+                <h3>For His CS313 Portfolio</h3>
+                <hr>
+                <button class="btn btn-default btn-lg">Click Here For Assignments</button>
+            </div>
+        </div>
+    </div>
+</div>
     <script
         src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="

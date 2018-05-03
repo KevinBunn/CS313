@@ -22,5 +22,14 @@ h1 {
 
 .dropdown-menu.show {
     display: block;
-    -webkit-min-logical-width: 40%;
+    -webkit-min-logical-width: 500px;
+}
+
+#location-dropdown:hover {
+    background-color: rgba(0,0,0,0.2);
+    
+}
+
+#location-container {
+    text-align: right;
 }
