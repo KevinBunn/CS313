@@ -1,0 +1,11 @@
+{
+    "AboutMeFirst": {
+        "text":"Hello! My name is Kevin Bunn and I am originally from Boise, Idaho. I'm studying Software Engineering with a Minor in Business Management. I hope to one day find a career as a project owner/manager of a software engineering team."
+    },
+    "AboutMeSecond": {
+        "text":"All of my hobbies include programming at the moment. I use to be an avid player of Starcraft, but now I just like to create bots for strategy games such as Starcraft. On top of that, I am developing an interest in creating reinforcement learning AI."
+    },
+    "AboutPicture": {
+        "text": "This picture was taken in Boise, Idaho at the central train station"
+    }
+}
