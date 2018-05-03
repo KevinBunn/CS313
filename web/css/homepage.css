@@ -15,6 +15,10 @@ html {
     padding-top: 25%;
 }
 
+#custom-button {
+    background-color: darkgrey;
+}
+
 h1 {
     font-weight: 700;
     font-size: 4em;
