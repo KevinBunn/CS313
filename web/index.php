@@ -35,8 +35,8 @@
                     $string = file_get_contents("text.json");
                     $json = json_decode($string, true);
                   
-                    echo "<p>$json['AboutMeFirst'][text]</p>";
-                    echo "<p>$json['AboutMeSecond'][text]</p>"
+                    echo '<p>' . $json['AboutMeFirst']['text'] . '</p>';
+                    echo '<p>' . $json['AboutMeSecond']['text'] . '</p>';
                    ?>
               </div>
               </li>
