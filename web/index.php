@@ -56,7 +56,7 @@
                 <h1>Kevin's Homepage</h1>
                 <h3>For His CS313 Portfolio</h3>
                 <hr>
-                <button href="assignments.php" class="btn btn-default btn-lg">Click Here For Assignments</button>
+                <button action="assignments.php" class="btn btn-default btn-lg">Click Here For Assignments</button>
             </div>
         </div>
     </div>
