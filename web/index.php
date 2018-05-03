@@ -41,7 +41,7 @@
               </div>
               </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="assignments.php">Assignments</a>
+              <a class="nav-link" href="assignments.php">Assignments</a>
             </li>
           </ul>
         </div>
