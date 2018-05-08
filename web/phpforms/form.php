@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
  $email = test_input($_POST["email"]);
  $major = test_input($_POST["major"]);
  $comment = test_input($_POST["comment"]);
- $country = test_input($_POST["country"]);
+ $country = $_POST["country"];
 }
 
 function test_input($data) {
@@ -53,6 +53,8 @@ echo $major;
 echo "<br>";
 echo $comment;
 echo "<br>";
+echo $country;
+echo count($country) . " count"
 for ($i = 0; $i < count($country); $i++)
 {
     echo $country[$i] . "<br>";
