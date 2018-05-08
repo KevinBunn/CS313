@@ -20,16 +20,19 @@ function test_input($data) {
  $data = htmlspecialchars($data);
  return $data;
 }
+    
+$majors = array("CS", "WDD", "CIT", "CE", "ART");
 ?>
    
 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
    Name: <input type="text" name="name"><br>
    E-mail: <input type="text" name="email"><br>
    Major:<br/>
-   <input type="radio" name="major" value="CS">CS
-   <input type="radio" name="major" value="WDD">WDD
-   <input type="radio" name="major" value="CIT">CIT
-   <input type="radio" name="major" value="CE">CE
+    <?php
+    foreach ($majors as $major){
+        echo "<input type=\"radio\" name=\"major\" value=\"$major\">$major";
+    }
+    ?>
    Comments:<br/>
    <textarea name="comment" rows="10" cols="50"></textarea><br/>
     <input type="checkbox" name="country[]" value="NorthAmerica">North America<br>
@@ -53,7 +56,6 @@ echo $major;
 echo "<br>";
 echo $comment;
 echo "<br>";
-echo count($country) . " count";
 foreach ($country as $place)
 {
     echo $place;
