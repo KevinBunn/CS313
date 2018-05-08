@@ -11,6 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
  $email = test_input($_POST["email"]);
  $major = test_input($_POST["major"]);
  $comment = test_input($_POST["comment"]);
+ $country = test_input($_POST["country[]"]);
 }
 
 function test_input($data) {
@@ -30,7 +31,15 @@ function test_input($data) {
    <input type="radio" name="major" value="CIT">CIT
    <input type="radio" name="major" value="CE">CE
    Comments:<br/>
-   <textarea name="comment" rows="10" cols="50"></textarea>
+   <textarea name="comment" rows="10" cols="50"></textarea><br/>
+    <input type="checkbox" name="country[]" value="North America">North America<br>
+    <input type="checkbox" name="country[]" value="South America">South America<br>
+    <input type="checkbox" name="country[]" value="Eruope">Eruope<br>
+    <input type="checkbox" name="country[]" value="Asia">Asia<br>
+    <input type="checkbox" name="country[]" value="Australia">Australia<br>
+    <input type="checkbox" name="country[]" value="Africa">Africa<br>
+    <input type="checkbox" name="country[]" value="Antartica">Antartica<br>
+
 <input type="submit">
 </form>
     
@@ -44,6 +53,11 @@ echo $major;
 echo "<br>";
 echo $comment;
 echo "<br>";
+for ($i = 0; $i < count($country); $i++)
+{
+    echo($country[$i]."<br>");
+}
+echo $country
 ?>
 </body>
 </html>
