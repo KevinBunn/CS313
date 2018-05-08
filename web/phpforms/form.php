@@ -38,11 +38,12 @@ function test_input($data) {
 echo "<h2>Your Input:</h2>";
 echo $name;
 echo "<br>";
-echo $email;
+echo "<a href=\"mailto:$email\">$email</a>";
 echo "<br>";
 echo $major;
 echo "<br>";
 echo $comment;
+echo "<br>";
 ?>
 </body>
 </html>
