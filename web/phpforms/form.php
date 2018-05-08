@@ -22,6 +22,16 @@ function test_input($data) {
 }
     
 $majors = array("CS", "WDD", "CIT", "CE", "ART");
+    
+$countries = array(
+    "na" => "North America",
+    "sa" => "South America",
+    "eu" => "Europe",
+    "as" => "Asia",
+    "au" => "Australia",
+    "af" => "Africa",
+    "an" => "Antartica"
+)
 ?>
    
 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
@@ -36,13 +46,13 @@ $majors = array("CS", "WDD", "CIT", "CE", "ART");
     ?>
    Comments:<br/>
    <textarea name="comment" rows="10" cols="50"></textarea><br/>
-    <input type="checkbox" name="country[]" value="NorthAmerica">North America<br>
-    <input type="checkbox" name="country[]" value="SouthAmerica">South America<br>
-    <input type="checkbox" name="country[]" value="Eruope">Eruope<br>
-    <input type="checkbox" name="country[]" value="Asia">Asia<br>
-    <input type="checkbox" name="country[]" value="Australia">Australia<br>
-    <input type="checkbox" name="country[]" value="Africa">Africa<br>
-    <input type="checkbox" name="country[]" value="Antartica">Antartica<br>
+    <input type="checkbox" name="country[]" value="na">North America<br>
+    <input type="checkbox" name="country[]" value="sa">South America<br>
+    <input type="checkbox" name="country[]" value="eu">Eruope<br>
+    <input type="checkbox" name="country[]" value="as">Asia<br>
+    <input type="checkbox" name="country[]" value="au">Australia<br>
+    <input type="checkbox" name="country[]" value="af">Africa<br>
+    <input type="checkbox" name="country[]" value="an">Antartica<br>
 
 <input type="submit">
 </form>
