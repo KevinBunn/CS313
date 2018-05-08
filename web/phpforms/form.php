@@ -53,11 +53,11 @@ echo $major;
 echo "<br>";
 echo $comment;
 echo "<br>";
-echo $country;
-echo count($country) . " count"
-for ($i = 0; $i < count($country); $i++)
+echo count($country) . " count";
+foreach ($country as $place)
 {
-    echo $country[$i] . "<br>";
+    echo $place;
+    echo "<br>";
 }
 ?>
 </body>
