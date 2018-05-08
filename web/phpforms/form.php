@@ -32,8 +32,8 @@ function test_input($data) {
    <input type="radio" name="major" value="CE">CE
    Comments:<br/>
    <textarea name="comment" rows="10" cols="50"></textarea><br/>
-    <input type="checkbox" name="country[]" value="North America">North America<br>
-    <input type="checkbox" name="country[]" value="South America">South America<br>
+    <input type="checkbox" name="country[]" value="NorthAmerica">North America<br>
+    <input type="checkbox" name="country[]" value="SouthAmerica">South America<br>
     <input type="checkbox" name="country[]" value="Eruope">Eruope<br>
     <input type="checkbox" name="country[]" value="Asia">Asia<br>
     <input type="checkbox" name="country[]" value="Australia">Australia<br>
@@ -55,7 +55,7 @@ echo $comment;
 echo "<br>";
 for ($i = 0; $i < count($country); $i++)
 {
-    echo($country[$i]."<br>");
+    echo $country[$i] . "<br>";
 }
 ?>
 </body>
