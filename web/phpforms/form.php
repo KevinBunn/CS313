@@ -29,9 +29,10 @@ $majors = array("CS", "WDD", "CIT", "CE", "ART");
    E-mail: <input type="text" name="email"><br>
    Major:<br/>
     <?php
-    foreach ($majors as $major){
-        echo "<input type=\"radio\" name=\"major\" value=\"$major\">$major";
+    foreach ($majors as $m){
+        echo "<input type=\"radio\" name=\"major\" value=\"$m\">$m";
     }
+    echo "<br>";
     ?>
    Comments:<br/>
    <textarea name="comment" rows="10" cols="50"></textarea><br/>
