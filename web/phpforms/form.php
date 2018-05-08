@@ -57,7 +57,6 @@ for ($i = 0; $i < count($country); $i++)
 {
     echo($country[$i]."<br>");
 }
-echo $country
 ?>
 </body>
 </html>
