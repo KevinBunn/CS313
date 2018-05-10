@@ -5,9 +5,9 @@ img {
   width: 100px;
   height: 100px;
 }
-#unit-display {
-  margin: 10px;
+.unit-display {
+  padding: 10px;
 }
 input[type="number"] {
-  width: 20px;
+  width: 50px;
 }
