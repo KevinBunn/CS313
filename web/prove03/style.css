@@ -1,8 +1,8 @@
 <?php
   session_start();
-  /*if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $_SESSION['units'] = $_POST["units"];
-  }*/
+  }
 
   $unit_costs = array(
     "DarkTemplar" => 100,
