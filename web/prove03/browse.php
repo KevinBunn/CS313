@@ -20,12 +20,30 @@
   </head>
   <body>
   <form>
-    <input type="checkbox" name="units[]" value="DarkTemplar">Dark Templar<br>
-    <input type="checkbox" name="units[]" value="Stalker">Stalker<br>
-    <input type="checkbox" name="units[]" value="Colossus">Colossus<br>
-    <input type="checkbox" name="units[]" value="Pheonix">Pheonix<br>
-    <input type="checkbox" name="units[]" value="Artanis">Artanis<br>
-  </form>
-    
+    <div id="content">
+      <div id="content-dt">
+        <img src="dark_templar.png" alt="Dark Templar">
+        <input type="checkbox" name="units[]" value="DarkTemplar">Dark Templar
+        <br>
+      </div>
+      <div id="content-st">
+        <img src="stalker.jpeg" alt="Stalker">
+        <input type="checkbox" name="units[]" value="Stalker" >Stalker<br>
+      </div>
+      <div id="content-col">
+        <img src="colossus.png" alt="Stalker">
+        <input type="checkbox" name="units[]" value="Colossus">Colossus<br>
+      </div>
+      <div id="content-ph">
+        <img src="pheonix.png" alt="pheonix">
+        <input type="checkbox" name="units[]" value="Pheonix">Pheonix<br>  
+      </div>
+      <div id="content-ar">
+        <img src="artanis.png" alt="Artanis">
+        <input type="checkbox" name="units[]" value="Artanis">Artanis
+        <br>
+      </div>
+    </div>
+  </form> 
   </body>
 </html>
