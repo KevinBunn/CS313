@@ -1,4 +1,3 @@
-<!DOCTPYE HTML>
 <?php
   session_start()
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -15,6 +14,7 @@
   
   $_SESSION['unit_costs'] = $unit_costs;
 ?>
+<!DOCTYPE HTML>
 <html>
   <head>
   </head>
