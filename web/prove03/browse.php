@@ -1,7 +1,11 @@
 <?php
   session_start();
+  $units = $dt = $stalker = $colossus = $pheonix = $artanis = "";
+
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $_SESSION['units'] = $_POST["units"];
+    
+    $units = array()
+    $_SESSION['units'] = $units;
   }
 
 // foreach($array as $key => $value)
@@ -26,26 +30,26 @@
     <header><?php include 'navbar.php'?></header>
   <form>
     <div id="content">
-      <div id="content-dt">
+      <div class="unit-display" id="content-dt">
         <img src="dark_templar.png" alt="Dark Templar">
-        <input type="checkbox" name="units[]" value="DarkTemplar">Dark Templar
+        <input type="number" name="DarkTemplar">Dark Templar
         <br>
       </div>
-      <div id="content-st">
+      <div class="unit-display" id="content-st">
         <img src="stalker.png" alt="Stalker">
-        <input type="checkbox" name="units[]" value="Stalker" >Stalker<br>
+        <input type="number" name="Stalker">Stalker<br>
       </div>
-      <div id="content-col">
-        <img src="colossus.png" alt="Stalker">
-        <input type="checkbox" name="units[]" value="Colossus">Colossus<br>
+      <div class="unit-display" id="content-col">
+        <img src="colossus.png" alt="Colossus">
+        <input type="number" name="Colossus">Colossus<br>
       </div>
-      <div id="content-ph">
-        <img src="pheonix.png" alt="pheonix">
-        <input type="checkbox" name="units[]" value="Pheonix">Pheonix<br>  
+      <div class="unit-display" id="content-ph">
+        <img src="pheonix.png" alt="Pheonix">
+        <input type="number" name="Pheonix">Pheonix<br>  
       </div>
-      <div id="content-ar">
+      <div class="unit-display" id="content-ar">
         <img src="artanis.png" alt="Artanis">
-        <input type="checkbox" name="units[]" value="Artanis">Artanis
+        <input type="checkbox" name="Artanis" value="1">Artanis
         <br>
       </div>
       <input type="submit">
