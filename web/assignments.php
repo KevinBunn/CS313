@@ -53,7 +53,8 @@
     <div class="row">
         <div class="col-lg-12">
             <div id="content">
-                <h1>Coming Soon...</h1>
+                <h1>Assignments</h1>
+                <p><a href="prove03/">Shopping Cart</a></p>
             </div>
         </div>
     </div>
