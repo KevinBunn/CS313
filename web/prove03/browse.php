@@ -4,7 +4,7 @@
 
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
-    $units = array()
+    //$units = array()
     $_SESSION['units'] = $units;
   }
 
