@@ -46,13 +46,13 @@ $countries = array(
     ?>
    Comments:<br/>
    <textarea name="comment" rows="10" cols="50"></textarea><br/>
-    <input type="checkbox" name="country[]" value="na">North America<br>
-    <input type="checkbox" name="country[]" value="sa">South America<br>
-    <input type="checkbox" name="country[]" value="eu">Eruope<br>
-    <input type="checkbox" name="country[]" value="as">Asia<br>
-    <input type="checkbox" name="country[]" value="au">Australia<br>
-    <input type="checkbox" name="country[]" value="af">Africa<br>
-    <input type="checkbox" name="country[]" value="an">Antartica<br>
+    <input type="checkbox" name="country[]" value="North America">North America<br>
+    <input type="checkbox" name="country[]" value="South America">South America<br>
+    <input type="checkbox" name="country[]" value="Eruope">Eruope<br>
+    <input type="checkbox" name="country[]" value="Asia">Asia<br>
+    <input type="checkbox" name="country[]" value="Australia">Australia<br>
+    <input type="checkbox" name="country[]" value="Africa">Africa<br>
+    <input type="checkbox" name="country[]" value="Antartica">Antartica<br>
 
 <input type="submit">
 </form>
