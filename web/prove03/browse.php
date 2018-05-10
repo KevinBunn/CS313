@@ -1,9 +1,10 @@
 <?php
   session_start();
-  /*if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $_SESSION['units'] = $_POST["units"];
-  }*/
+  }
 
+// foreach($array as $key => $value)
   $unit_costs = array(
     "DarkTemplar" => 100,
     "Stalker" => 150,
@@ -47,15 +48,12 @@
         <input type="checkbox" name="units[]" value="Artanis">Artanis
         <br>
       </div>
-      <a>Submit</a>
+      <input type="submit">
     </div>
   </form> 
-        <script
-        src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
     </script>
-    <script type="text/javascript"  src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js">
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js">
     </script>
   </body>
   
