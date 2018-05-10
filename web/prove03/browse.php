@@ -32,7 +32,7 @@
         <br>
       </div>
       <div id="content-st">
-        <img src="stalker.jpeg" alt="Stalker">
+        <img src="stalker.png" alt="Stalker">
         <input type="checkbox" name="units[]" value="Stalker" >Stalker<br>
       </div>
       <div id="content-col">
