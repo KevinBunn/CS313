@@ -8,7 +8,7 @@
 <html>
   <body>
     <?php
-      echo "<h1>$_SESSION['count']</h1>";
+      echo "<h1>" . $_SESSION['count'] . "</h1>";
       //echo "<p>viewcart</p>"
     ?>
   </body>
