@@ -1,5 +1,5 @@
 <?php
-  session_start()
+  session_start();
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $_SESSION['units'] = $_POST["units"];
   }
@@ -14,7 +14,7 @@
   
   $_SESSION['unit_costs'] = $unit_costs;
 ?>
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
   <head>
   </head>
