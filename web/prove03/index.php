@@ -1,5 +1,5 @@
 <?php
    session_start();
    $_SESSION['units'] = '';
-   header('Location: browser.php');
+   header('Location: browse.php');
 ?>
