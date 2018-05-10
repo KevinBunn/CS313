@@ -32,20 +32,20 @@
     <div id="content">
       <div class="unit-display" id="content-dt">
         <img src="dark_templar.png" alt="Dark Templar">
-        <input type="number" name="DarkTemplar">Dark Templar
+        <input type="number" name="DarkTemplar" min="0">Dark Templar
         <br>
       </div>
       <div class="unit-display" id="content-st">
         <img src="stalker.png" alt="Stalker">
-        <input type="number" name="Stalker">Stalker<br>
+        <input type="number" name="Stalker" min="0">Stalker<br>
       </div>
       <div class="unit-display" id="content-col">
         <img src="colossus.png" alt="Colossus">
-        <input type="number" name="Colossus">Colossus<br>
+        <input type="number" name="Colossus" min="0">Colossus<br>
       </div>
       <div class="unit-display" id="content-ph">
         <img src="pheonix.png" alt="Pheonix">
-        <input type="number" name="Pheonix">Pheonix<br>  
+        <input type="number" name="Pheonix" min="0">Pheonix<br>  
       </div>
       <div class="unit-display" id="content-ar">
         <img src="artanis.png" alt="Artanis">
