@@ -7,12 +7,12 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto" style="color:white">
+          <ul class="navbar-nav mr-auto">
             <?php if($_SERVER["PHP_SELF"]=="browse.php"){echo '<li class="nav-item active">';} else {echo '<li class="nav-item">';} ?>
-              <a class="nav-link" href="browse.php">Select Units <span class="sr-only">(current)</span></a>
+              <a class="nav-link" style="color:white" href="browse.php">Select Units <span class="sr-only">(current)</span></a>
             </li>
             <?php if($_SERVER["PHP_SELF"]=="viewcart.php"){echo '<li class="nav-item active">';} else {echo '<li class="nav-item">';} ?>
-              <a class="nav-link" href="viewcart.php">View Army</a>
+              <a class="nav-link" style="color:white" href="viewcart.php">View Army</a>
             </li>
           </ul>
         </div>
