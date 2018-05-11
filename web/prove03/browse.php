@@ -49,24 +49,24 @@
           <div id="content">
             <div class="unit-display" id="content-dt">
               <img src="dark_templar.png" alt="Dark Templar">
-              <input type="number" name="DarkTemplar" min="0" value="0">Dark Templar
+              <input class="unit-input" type="number" name="DarkTemplar" min="0" value="0">Dark Templar
               <br>
             </div>
             <div class="unit-display" id="content-st">
               <img src="stalker.png" alt="Stalker">
-              <input type="number" name="Stalker" min="0" value="0">Stalker<br>
+              <input class="unit-input" type="number" name="Stalker" min="0" value="0">Stalker<br>
             </div>
             <div class="unit-display" id="content-col">
               <img src="colossus.png" alt="Colossus">
-              <input type="number" name="Colossus" min="0" value="0">Colossus<br>
+              <input class="unit-input" type="number" name="Colossus" min="0" value="0">Colossus<br>
             </div>
             <div class="unit-display" id="content-ph">
               <img src="pheonix.png" alt="Pheonix">
-              <input type="number" name="Pheonix" min="0" value="0">Pheonix<br>  
+              <input class="unit-input" type="number" name="Pheonix" min="0" value="0">Pheonix<br>  
             </div>
             <div class="unit-display" id="content-ar">
               <img src="artanis.png" alt="Artanis">
-              <input type="checkbox" name="Artanis" value="1">Artanis
+              <input class="unit-input" type="checkbox" name="Artanis" value="1">Artanis
               <br>
             </div>
               <input type="submit" value="Confirm Selection">
