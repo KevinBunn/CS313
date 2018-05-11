@@ -50,20 +50,20 @@
             <div class="unit-display" id="content-dt">
               <img src="resources/dark_templar.png" alt="Dark Templar">
               <input class="unit-input" type="number" name="DarkTemplar" min="0" 
-              <?php echo "value=\"" .$_SESSION["DarkTemplar"] . "\""?>>Dark Templar
+              <?php echo "value=\"" . $_SESSION["DarkTemplar"] . "\""?>>Dark Templar
               <br>
             </div>
             <div class="unit-display" id="content-st">
               <img src="resources/stalker.png" alt="Stalker">
-              <input class="unit-input" type="number" name="Stalker" min="0" value="0">Stalker<br>
+              <input class="unit-input" type="number" name="Stalker" min="0" <?php echo "value=\"" . $_SESSION["Stalker"] . "\""?>>Stalker<br>
             </div>
             <div class="unit-display" id="content-col">
               <img src="resources/colossus.png" alt="Colossus">
-              <input class="unit-input" type="number" name="Colossus" min="0" value="0">Colossus<br>
+              <input class="unit-input" type="number" name="Colossus" min="0" <?php echo "value=\"" . $_SESSION["Colossus"] . "\""?>>Colossus<br>
             </div>
             <div class="unit-display" id="content-ph">
               <img src="resources/pheonix.png" alt="Pheonix">
-              <input class="unit-input" type="number" name="Pheonix" min="0" value="0">Pheonix<br>  
+              <input class="unit-input" type="number" name="Pheonix" min="0" <?php echo "value=\"" . $_SESSION["Pheonix"] . "\""?>>Pheonix<br>  
             </div>
             <div class="unit-display" id="content-ar">
               <img src="resources/artanis.png" alt="Artanis">
