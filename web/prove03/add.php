@@ -5,5 +5,4 @@
     $_SESSION["Colossus"] = $_POST["Colossus"];
     $_SESSION["Pheonix"] = $_POST["Pheonix"];
     $_SESSION["Artanis"] = $_POST["Artanis"];
-
 ?>
