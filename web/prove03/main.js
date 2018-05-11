@@ -3,6 +3,8 @@ function addToSession(event) {
     let name = event.name;
     let value = event.value;
 
+    console.log(name);
+    console.log(value);
     // Send Ajax request to backend.php, with src set as "img" in the POST data
     $.post("add.php", {name: value});
 }
