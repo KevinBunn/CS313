@@ -34,7 +34,7 @@
   </div>
   <form>
     <div id="container">
-      <div class="row">
+      <div class="row justify-content-center">
         <div class="col-lg-4">
           <div id="content">
             <div class="unit-display" id="content-dt">
