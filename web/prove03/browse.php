@@ -25,7 +25,7 @@
       <div class="row">
         <div class="col-lg-12">
             <div id="title">
-              <p>Choose Carefully Excecutor,<br> Adun is being attacked by the Zerg.</p>
+                <h1>Choose Carefully Excecutor,</h1><br> <p> Adun needs your help, send an army in with what resources we have left.</p>
             </div>
         </div>
       </div>
