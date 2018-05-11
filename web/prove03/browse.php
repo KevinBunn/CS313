@@ -36,7 +36,7 @@
     <div id="container">
       <div class="row">
         <div class="col-lg-12">
-          <div>
+          <div id="content">
             <div class="unit-display" id="content-dt">
               <img src="dark_templar.png" alt="Dark Templar">
               <input type="number" name="DarkTemplar" min="0" value="0">Dark Templar
