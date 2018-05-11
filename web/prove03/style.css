@@ -20,7 +20,9 @@ nav {
   background: url("resources/stars.png");
   background-size: cover;
   background-repeat: no-repeat;
-  color: white;
+}
+navbar-brand, nav-item {
+  color: white; 
 }
 #title {
   padding-top: 50px;
