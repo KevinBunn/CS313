@@ -1,5 +1,5 @@
 function addToSession(event) {
-    alert("clicked!")
+    console.dir(event);
 }
 
 var formInputs = document.getElementsByClassName("unit-input");
