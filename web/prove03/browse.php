@@ -20,7 +20,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <header><?php include 'navbar.php'?></header>
+    <header id="header"><?php include 'navbar.php'?></header>
   <div id="container">
       <div class="row">
         <div class="col-lg-12">

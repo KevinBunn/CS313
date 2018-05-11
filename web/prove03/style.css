@@ -16,6 +16,12 @@ img[class="mineral-icon"] {
 #content {
   text-align: left;
 }
+#header {
+  background: url("resources/stars.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
 #title {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -26,9 +32,10 @@ img[class="mineral-icon"] {
   background-repeat: no-repeat;
 }
 #main {
-  background: url("resources/stars.png");
+  background: url("resources/spear.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  color: white;
 }
 .unit-display {
   padding: 10px;
