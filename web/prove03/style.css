@@ -21,7 +21,7 @@ nav {
   background-size: cover;
   background-repeat: no-repeat;
 }
-navbar-brand, nav-item {
+#navbar-brand, #nav-item {
   color: white; 
 }
 #title {
