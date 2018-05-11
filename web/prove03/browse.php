@@ -30,7 +30,7 @@
     <header><?php include 'navbar.php'?></header>
   <div id="container">
     <div class="row justify-content-center">
-      <div class="col-lg-4">
+      <div class="col-lg-6">
           <div id="mineral-display">
             <span>Current Minerals</span><br>
             <span><img style="width:20px;height:20px;"src="minerals.png">2000</span>
@@ -41,7 +41,7 @@
   <form>
     <div id="container">
       <div class="row justify-content-center">
-        <div class="col-lg-4">
+        <div class="col-lg-6">
           <div id="content">
             <div class="unit-display" id="content-dt">
               <img src="dark_templar.png" alt="Dark Templar">
