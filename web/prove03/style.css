@@ -16,7 +16,7 @@ img[class="mineral-icon"] {
 #content {
   text-align: left;
 }
-#header {
+nav {
   background: url("resources/stars.png");
   background-size: cover;
   background-repeat: no-repeat;
