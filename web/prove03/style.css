@@ -25,6 +25,11 @@ img[class="mineral-icon"] {
   background-size: cover;
   background-repeat: no-repeat;
 }
+#main {
+  background: url("resources/stars.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .unit-display {
   padding: 10px;
 }
