@@ -27,7 +27,7 @@
               <div id="content">
                 <div class="unit-display" id="content-dt">    
                   <img src="resources/dark_templar.png" alt="Dark Templar">
-                  <?php echo "<h1>" . $_SESSION["DarkTemplar"] . "</h1>"?>
+                  <?php echo "<p>" . $_SESSION["DarkTemplar"] . "</p>"?>
                   <br>
                 </div>
                 <div class="unit-display" id="content-st">    
