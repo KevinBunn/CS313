@@ -28,6 +28,10 @@
   </head>
   <body>
     <header><?php include 'navbar.php'?></header>
+  <div>
+    <span>Current Minerals</span>
+    <span><img style="width:20px;height:20px;"src="minerals.png">2000</span>
+  </div>
   <form>
     <div id="container">
       <div class="row">
