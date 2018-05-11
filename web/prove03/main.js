@@ -8,8 +8,7 @@ function addToSession(event) {
     console.log(value);
     
     xhttp.open("POST", "add.php", true);
-  xhttp.setRequestHeader(name, value);
-  xhttp.send();
+  xhttp.send(`${name}=${value}`);
 }
 
 var formInputs = document.getElementsByClassName("unit-input");
