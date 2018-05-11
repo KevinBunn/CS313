@@ -5,6 +5,9 @@ img {
   width: 100px;
   height: 100px;
 }
+#content {
+  text-align: center;
+}
 .unit-display {
   padding: 10px;
 }
