@@ -17,11 +17,11 @@ img[class="mineral-icon"] {
   text-align: left;
 }
 nav {
-  background: url("resources/stars.png");
+  background: url("resources/stars-header.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
-#navbar-brand, #nav-item {
+.navbar-brand, .nav-item {
   color: white; 
 }
 #title {
