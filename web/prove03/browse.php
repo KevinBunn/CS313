@@ -33,7 +33,7 @@
       <div class="col-lg-6">
           <div id="mineral-display">
             <span>Current Minerals</span><br>
-            <span><img style="width:20px;height:20px;"src="minerals.png">2000</span>
+            <span><img class="mineral-icon" src="minerals.png">2000</span>
           </div>
       </div>
     </div>

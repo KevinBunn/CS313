@@ -5,8 +5,13 @@ img {
   width: 100px;
   height: 100px;
 }
+#mineral-icon {
+  width:20px;
+  height:20px;
+  margin: 5px;"
+}
 #mineral-display {
-    text-align: right;
+  text-align: right;
 }
 #content {
   text-align: left;
