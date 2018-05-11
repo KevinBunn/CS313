@@ -37,7 +37,7 @@
       <div class="col-lg-6">
           <div id="mineral-display">
             <span>Current Minerals</span><br>
-            <span><img class="mineral-icon" src="minerals.png">2000</span>
+            <span><img class="mineral-icon" src="resources/minerals.png">2000</span>
           </div>
       </div>
     </div>
@@ -48,24 +48,24 @@
         <div class="col-lg-6">
           <div id="content">
             <div class="unit-display" id="content-dt">
-              <img src="dark_templar.png" alt="Dark Templar">
+              <img src="resources/dark_templar.png" alt="Dark Templar">
               <input class="unit-input" type="number" name="DarkTemplar" min="0" value="0">Dark Templar
               <br>
             </div>
             <div class="unit-display" id="content-st">
-              <img src="stalker.png" alt="Stalker">
+              <img src="resources/stalker.png" alt="Stalker">
               <input class="unit-input" type="number" name="Stalker" min="0" value="0">Stalker<br>
             </div>
             <div class="unit-display" id="content-col">
-              <img src="colossus.png" alt="Colossus">
+              <img src="resources/colossus.png" alt="Colossus">
               <input class="unit-input" type="number" name="Colossus" min="0" value="0">Colossus<br>
             </div>
             <div class="unit-display" id="content-ph">
-              <img src="pheonix.png" alt="Pheonix">
+              <img src="resources/pheonix.png" alt="Pheonix">
               <input class="unit-input" type="number" name="Pheonix" min="0" value="0">Pheonix<br>  
             </div>
             <div class="unit-display" id="content-ar">
-              <img src="artanis.png" alt="Artanis">
+              <img src="resources/artanis.png" alt="Artanis">
               <input class="unit-input" type="checkbox" name="Artanis" value="1">Artanis
               <br>
             </div>
@@ -78,6 +78,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
     </script>
     <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js">
+    </script>
+    <script type="text/javascript" src="main.js">
     </script>
   </body>
   
