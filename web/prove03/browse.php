@@ -1,16 +1,5 @@
 <?php
   session_start();
-  $units = $dt = $stalker = $colossus = $pheonix = $artanis = "";
-
-  if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $dt = $_POST["DarkTemplar"];
-    $stalker = $_POST["Stalker"];
-    $colossus = $_POST["Colossus"];
-    $pheonix = $_POST["Pheonix"];
-    $artanis = $_POST["Artanis"];
-    $units = array($dt, $stalker, $colossus, $pheonix, $artanis);
-    $_SESSION['units'] = $units;
-  }
 
 // foreach($array as $key => $value)
   $unit_costs = array(
@@ -76,7 +65,6 @@
       </div>
     </div>
   </form> 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
     </script>
     <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js">
