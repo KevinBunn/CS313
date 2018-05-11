@@ -12,7 +12,7 @@
               <a class="nav-link" href="browse.php">Select Units <span class="sr-only">(current)</span></a>
             </li>
             <?php if($_SERVER["PHP_SELF"]=="viewcart.php"){echo '<li class="nav-item active">';} else {echo '<li class="nav-item">';} ?>
-              <a class="nav-link" href="viewcart.php">Shopping Cart</a>
+              <a class="nav-link" href="viewcart.php">View Army</a>
             </li>
           </ul>
         </div>
