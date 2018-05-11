@@ -47,6 +47,9 @@ nav {
 .unit-display {
   padding: 10px;
 }
+.unit-display.h1 {
+  display: inline;
+}
 input {
   margin: 8px;
 }
