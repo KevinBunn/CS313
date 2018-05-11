@@ -35,7 +35,7 @@
         <div class="row justify-content-center">
           <div class="col-lg-6">
               <div id="mineral-display">
-                <span>Current Minerals</span><br>
+                <span>Budgeted Minerals</span><br>
                 <span><img class="mineral-icon" src="resources/minerals.png"><?php echo $_SESSION["TotalMinerals"]; ?></span>
               </div>
           </div>
