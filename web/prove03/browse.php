@@ -49,7 +49,8 @@
           <div id="content">
             <div class="unit-display" id="content-dt">
               <img src="resources/dark_templar.png" alt="Dark Templar">
-              <input class="unit-input" type="number" name="DarkTemplar" min="0" value="0">Dark Templar
+              <input class="unit-input" type="number" name="DarkTemplar" min="0" 
+              <?php echo "value=\"" .$_SESSION["DarkTemplar"] . "\""?>>Dark Templar
               <br>
             </div>
             <div class="unit-display" id="content-st">
