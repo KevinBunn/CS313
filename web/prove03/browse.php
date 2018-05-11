@@ -28,9 +28,15 @@
   </head>
   <body>
     <header><?php include 'navbar.php'?></header>
-  <div id="mineral-display">
-    <span>Current Minerals</span><br>
-    <span><img style="width:20px;height:20px;"src="minerals.png">2000</span>
+  <div id="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-4">
+          <div id="mineral-display">
+            <span>Current Minerals</span><br>
+            <span><img style="width:20px;height:20px;"src="minerals.png">2000</span>
+          </div>
+      </div>
+    </div>
   </div>
   <form>
     <div id="container">
