@@ -56,7 +56,7 @@
             </div>
             <div class="unit-display" id="content-ar">
               <img src="resources/artanis.png" alt="Artanis">
-              <input class="unit-input" type="checkbox" name="Artanis" value="1">Artanis
+              <input class="unit-input" type="checkbox" name="Artanis">Artanis
               <br>
             </div>
               <input type="submit" value="Confirm Selection">
