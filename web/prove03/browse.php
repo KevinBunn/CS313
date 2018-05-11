@@ -47,29 +47,29 @@
             <div class="col-lg-6">
               <div id="content">
                 <div class="unit-display" id="content-dt">
-                  <img class="mineral-icon" src="resources/minerals.png">100    
+                  <img class="mineral-icon" src="resources/minerals.png">100<br>    
                   <img src="resources/dark_templar.png" alt="Dark Templar">
                   <input class="unit-input" type="number" name="DarkTemplar" min="0" 
                   <?php echo "value=\"" . $_SESSION["DarkTemplar"] . "\""?>>Dark Templar
                   <br>
                 </div>
                 <div class="unit-display" id="content-st">
-                  <img class="mineral-icon" src="resources/minerals.png">150    
+                  <img class="mineral-icon" src="resources/minerals.png">150<br>    
                   <img src="resources/stalker.png" alt="Stalker">
                   <input class="unit-input" type="number" name="Stalker" min="0" <?php echo "value=\"" . $_SESSION["Stalker"] . "\""?>>Stalker<br>
                 </div>
                 <div class="unit-display" id="content-col">
-                  <img class="mineral-icon" src="resources/minerals.png">300
+                  <img class="mineral-icon" src="resources/minerals.png">300<br>
                   <img src="resources/colossus.png" alt="Colossus">
                   <input class="unit-input" type="number" name="Colossus" min="0" <?php echo "value=\"" . $_SESSION["Colossus"] . "\""?>>Colossus<br>
                 </div>
                 <div class="unit-display" id="content-ph">
-                  <img class="mineral-icon" src="resources/minerals.png">100    
+                  <img class="mineral-icon" src="resources/minerals.png">100<br>    
                   <img src="resources/pheonix.png" alt="Pheonix">
                   <input class="unit-input" type="number" name="Pheonix" min="0" <?php echo "value=\"" . $_SESSION["Pheonix"] . "\""?>>Pheonix<br>  
                 </div>
                 <div class="unit-display" id="content-ar">
-                  <img class="mineral-icon" src="resources/minerals.png">500    
+                  <img class="mineral-icon" src="resources/minerals.png">500<br>    
                   <img src="resources/artanis.png" alt="Artanis">
                   <input class="unit-input" type="checkbox" name="Artanis">Artanis
                   <br>
