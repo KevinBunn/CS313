@@ -11,7 +11,9 @@ img {
 img[class="mineral-icon"] {
   width:20px;
   height:20px;
-  margin: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 #mineral-display {
   text-align: right;
