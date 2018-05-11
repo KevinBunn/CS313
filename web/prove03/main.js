@@ -13,4 +13,11 @@ var formInputs = document.getElementsByClassName("unit-input");
 for (var i = 0; i < formInputs.length; i++) {
     formInputs[i].addEventListener("click", (event) => addToSession(event));
 }
-                            
+
+$(document).ready(function(){
+    $("unit-input").click(function(){
+        $.post("add.php", function(data, status){
+            alert("Data: " + data + "\nStatus: " + status);
+        });
+    });
+});
