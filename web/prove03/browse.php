@@ -22,6 +22,15 @@
   <body>
     <header><?php include 'navbar.php'?></header>
   <div id="container">
+      <div class="row">
+        <div class="col-lg-12">
+            <div id="title">
+              <p>Choose Carefully Excecutor,<br> Adun is being attacked by the Zerg.</p>
+            </div>
+        </div>
+      </div>
+  </div>
+  <div id="container">
     <div class="row justify-content-center">
       <div class="col-lg-6">
           <div id="mineral-display">

@@ -16,6 +16,11 @@ img[class="mineral-icon"] {
 #content {
   text-align: left;
 }
+#title {
+  text-align: center;
+  color: aliceblue;
+  background: url("resources/background.png");
+}
 .unit-display {
   padding: 10px;
 }
