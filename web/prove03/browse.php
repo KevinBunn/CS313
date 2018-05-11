@@ -3,8 +3,12 @@
   $units = $dt = $stalker = $colossus = $pheonix = $artanis = "";
 
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    
-    //$units = array()
+    $dt = $_POST["DarkTemplar"];
+    $stalker = $_POST["Stalker"];
+    $colossus = $_POST["Colossus"];
+    $pheonix = $_POST["Pheonix"];
+    $artanis = $_POST["Artanis"];
+    $units = array($dt, $stalker, $colossus, $pheonix, $artanis);
     $_SESSION['units'] = $units;
   }
 
