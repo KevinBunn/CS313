@@ -5,6 +5,9 @@ img {
   width: 100px;
   height: 100px;
 }
+#mineral-display {
+    text-align: right;
+}
 #content {
   text-align: center;
 }
