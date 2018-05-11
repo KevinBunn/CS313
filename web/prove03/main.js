@@ -1,7 +1,7 @@
 function addToSession(event) {
     // Get the src of the image
-    let name = event.name;
-    let value = event.value;
+    let name = event.target.name;
+    let value = event.target.value;
 
     console.log(name);
     console.log(value);
