@@ -24,14 +24,30 @@
         }
       ?>
     <header><?php include 'navbar.php'?></header>
-
-    <form action="<?php echo    htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-        Address: <input type="text" name="Address"><br>
-        City: <input type="text" name="City">
-        State: <input type="text" name="State">
-        Zip: <input type="text" name="Zip"><br>
-        <input type="submit">
-    </form>
+      
+    <div id="title">   
+      <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+                <div id="content" style="text-align: center">
+                    <h1>Where should we warp in?</h1>
+            </div>
+          </div>
+      </div> 
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+        <form action="<?php echo    htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+            Address: <input type="text" name="Address"><br>
+            City: <input type="text" name="City">
+            State: <input type="text" name="State">
+            Zip: <input type="text" name="Zip"><br>
+            <input type="submit">
+        </form>
+        </div>    
+      </div>      
+    </div>    
     
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
     </script>
