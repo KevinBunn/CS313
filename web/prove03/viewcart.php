@@ -46,7 +46,7 @@
                     if ($_SESSION["Artanis"] == 1) {
                      echo "<div class=\"unit-display\" id=\"content-ar\">
                       <img src=\"resources/artanis.png\" alt=\"Artanis\">
-                    </div>"
+                    </div>";
                     }
                   ?>
               </div>
