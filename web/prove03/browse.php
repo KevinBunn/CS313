@@ -21,8 +21,9 @@
   </head>
   <body>
     <header id="header"><?php include 'navbar.php'?></header>
-      
-  <div class="container" id="title">
+
+  <div id="title">   
+  <div class="container">
       <div class="row">
         <div class="col-lg-12">
             <div id="content">
@@ -30,7 +31,8 @@
             </div>
         </div>
       </div>
-  </div>   
+  </div> 
+</div>     
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-6">
