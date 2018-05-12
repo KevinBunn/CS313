@@ -13,7 +13,9 @@
     if($_POST["Pheonix"] != '') {    
       $_SESSION["Pheonix"] = $_POST["Pheonix"];
     }
-    //$_SESSION["Artanis"] = $_POST["Artanis"];
+    if($_POST["Artanis"] != '') {
+      $_SESSION["Artanis"] = $_POST["Artanis"];
+    }
     
     $computed_cost = (2000 - (100 * $_SESSION["DarkTemplar"]) - (150 * $_SESSION["Stalker"]) - (300 * $_SESSION["Colossus"]) - (100 * $_SESSION["Pheonix"]) - (500 * $_SESSION["Artanis"]));
     $_SESSION["TotalMinerals"] = $computed_cost;
