@@ -45,6 +45,7 @@
           <div class="row justify-content-center">
             <div class="col-lg-6">
               <div id="content">
+                 <form>   
                 <div class="unit-display" id="content-dt">
                   <img class="mineral-icon" src="resources/minerals.png">100<br>    
                   <img src="resources/dark_templar.png" alt="Dark Templar">
@@ -73,11 +74,12 @@
                   <input class="unit-input" type="checkbox" name="Artanis">Artanis
                   <br>
                 </div>
+                </form>      
               </div>
             </div>
           </div>
         </div>
-    </form> 
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
     </script>
     <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js">
