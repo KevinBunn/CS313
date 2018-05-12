@@ -1,5 +1,5 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if (isset($_POST['submit'])) {
     $_SESSION["Address"] = test_input($_POST["Address"]);
     $_SESSION["City"] = test_input($_POST["City"]);
     $_SESSION["State"] = test_input($_POST["State"]);
