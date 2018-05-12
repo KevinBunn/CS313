@@ -20,5 +20,5 @@ for (var i = 0; i < formInputs.length; i++) {
 
 function checkout(){
     console.log("changing");
-    document.location.href = "http://frozen-springs-42228.herokuapp.com/prove03/confirmation.php";
+    location.replace("http://frozen-springs-42228.herokuapp.com/prove03/confirmation.php");
 }
