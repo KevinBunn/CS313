@@ -24,42 +24,37 @@
           <div class="row justify-content-center">
             <div class="col-lg-6">
               <div id="content">
-                <?php if ($_SESSION["DarkTemplar"] > 0){
-                    echo "<div class=\"unit-display\" id=\"content-dt\">";  
-                    echo "<img src=\"resources/dark_templar.png\" alt=\"Dark Templar\">";
-                    echo "<h1>" . $_SESSION["DarkTemplar"] . "</h1>";
-                    }?>
+                <div class="unit-display" id="content-dt">    
+                  <img src="resources/dark_templar.png" alt="Dark Templar">
+                  <?php echo "<h1>" . $_SESSION["DarkTemplar"] . "</h1>"?>
+                  <br>
                 </div>
-                <?php if ($_SESSION["Stalker"] > 0) {
-                    echo "<div class=\"unit-display\" id=\"content-st\">";    
-                    echo "<img src=\"resources/stalker.png\" alt=\"Stalker\">";
-                    echo "<h1>" . $_SESSION["Stalker"] . "</h1>";
-                    echo "</div>";
-                    }?>
-                <?php if ($_SESSION["Colossus"] > 0) {
-                    echo "<div class=\"unit-display\"         id=\"content-col\">"
-                    echo ""<img src=\"resources/colossus.png\" alt=\"Colossus\">"
-                    echo "<h1>" . $_SESSION["Colossus"] . "</h1>";
-                    echo "</div>";
-                    }?>
-                <?php if ($_SESSION["Pheonix"] > 0) {
-                   echo "<div class=\"unit-display\" id=\"content-ph\">";  
-                   echo "<img src=\"resources/pheonix.png\" alt=\"Pheonix\">";
-                   echo "<h1>" . $_SESSION["Pheonix"] . "</h1>";
-                   echo "</div>";
-                  }?>
+                <div class="unit-display" id="content-st">    
+                  <img src="resources/stalker.png" alt="Stalker">
+                  <?php echo "<h1>" . $_SESSION["Stalker"] . "</h1>"?>
+                </div>
+                <div class="unit-display" id="content-col">
+                  <img src="resources/colossus.png" alt="Colossus">
+                  <?php echo "<h1>" . $_SESSION["Colossus"] . "</h1>"?>
+                </div>
+                <div class="unit-display" id="content-ph">  
+                  <img src="resources/pheonix.png" alt="Pheonix">
+                  <?php echo "<h1>" . $_SESSION["Pheonix"] . "</h1>"?>
+                </div>
                   <?php
                     if ($_SESSION["Artanis"] == 1) {
                      echo "<div class=\"unit-display\" id=\"content-ar\">
                       <img src=\"resources/artanis.png\" alt=\"Artanis\">
                     </div>";
-                    }?>
+                    }
+                  ?>
                 <div>
                     <a class="cart-button btn btn-secondary btn-sm active" role="button" aria-pressed="true" id="custom-button">Confirm Selection</a>
-                </div>    
+                </div> 
               </div>
             </div>
           </div>
+        </div> 
     
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
     </script>
