@@ -49,7 +49,7 @@
                     }
                   ?>
                 <div>
-                    <a class="cart-button btn btn-secondary btn-sm active" role="button" aria-pressed="true" id="custom-button">Confirm Selection</a>
+                    <a class="cart-button btn btn-secondary btn-sm active" role="button" aria-pressed="false" id="custom-button">Confirm Selection</a>
                 </div> 
               </div>
             </div>
