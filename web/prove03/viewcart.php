@@ -9,9 +9,8 @@
   </head>
   <body>
     <header><?php include 'navbar.php'?></header>
-
-      <div id="main">    
-      <div id="container">
+  
+      <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-6">
               <div id="mineral-display">
@@ -21,7 +20,7 @@
           </div>
         </div>
       </div>
-        <div id="container">
+        <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-6">
               <div id="content">
@@ -52,8 +51,7 @@
               </div>
             </div>
           </div>
-        </div>
-  </div>   
+        </div> 
     
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
     </script>

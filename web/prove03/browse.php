@@ -21,7 +21,7 @@
   </head>
   <body>
     <header id="header"><?php include 'navbar.php'?></header>
-  <div id="container">
+  <div class="container">
       <div class="row">
         <div class="col-lg-12">
             <div id="title">
@@ -30,7 +30,7 @@
         </div>
       </div>
   </div>   
-      <div id="container">
+      <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-6">
               <div id="mineral-display">
@@ -41,7 +41,7 @@
         </div>
       </div>
       <form>
-        <div id="container">
+        <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-6">
               <div id="content">
