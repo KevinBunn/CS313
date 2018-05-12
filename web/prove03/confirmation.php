@@ -9,6 +9,18 @@
   </head>
   <body>
     <header><?php include 'navbar.php'?></header>
+    <div id="title">   
+      <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+                <div id="content" style="text-align: center">
+                    <h2>Results</h2>
+                    <p>at <?php echo $_SESSION["Address"] . " " . $_SESSION["City"] . ", " . $_SESSION["State"] . ". " . $_SESSION["Zip"] . "."; ?></p>
+            </div>
+          </div>
+      </div> 
+    </div>
+      </div>  
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-6">
@@ -37,9 +49,6 @@
                     </div>";
                     }
                   ?>
-                <div>
-                    <a href="checkout.php" class="cart-button btn btn-secondary btn-sm active" role="button" aria-pressed="false" id="custom-button">Confirm Selection</a>
-                </div> 
               </div>
             </div>
           </div>
