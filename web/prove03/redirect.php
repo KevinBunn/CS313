@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 $_SESSION["Address"] = test_input($_POST["Address"]);
 $_SESSION["City"] = test_input($_POST["City"]);
