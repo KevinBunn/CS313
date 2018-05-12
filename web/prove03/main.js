@@ -19,5 +19,6 @@ for (var i = 0; i < formInputs.length; i++) {
 }
 
 function checkout(){
+    console.log("changing");
     document.location.href = "confirmation.php";
 }
