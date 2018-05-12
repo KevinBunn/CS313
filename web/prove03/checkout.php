@@ -42,7 +42,7 @@
         <form action="<?php echo    htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             Address:<br><input type="text" name="Address"><br>
             City:<br><input type="text" name="City"><br>
-            State:<br><input style="width: 100px" type="text" name="State">
+            State:<br><input style="width: 100px" type="text" name="State"><br>
             Zip:<br><input style="width: 50px" type="text" name="Zip"><br>
             <input type="submit">
         </form>
