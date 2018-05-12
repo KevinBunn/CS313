@@ -15,7 +15,7 @@
         <div class="row justify-content-center">
           <div class="col-lg-6">
               <div id="mineral-display">
-                <span>Budgeted Minerals</span><br>
+                <span>Budgeted Minerals Left</span><br>
                 <span><img class="mineral-icon" src="resources/minerals.png"><?php echo $_SESSION["TotalMinerals"]; ?></span>
               </div>
           </div>
@@ -38,17 +38,17 @@
                   <img src="resources/colossus.png" alt="Colossus">
                   <?php echo "<h1>" . $_SESSION["Colossus"] . "</h1>"?>
                 </div>
-                <div class="unit-display" id="content-ph">
-                  <img class="mineral-icon" src="resources/minerals.png">100<br>    
+                <div class="unit-display" id="content-ph">  
                   <img src="resources/pheonix.png" alt="Pheonix">
                   <?php echo "<h1>" . $_SESSION["Pheonix"] . "</h1>"?>
                 </div>
-                <div class="unit-display" id="content-ar">
-                  <img class="mineral-icon" src="resources/minerals.png">500<br>    
-                  <img src="resources/artanis.png" alt="Artanis">
-                  <input class="unit-input" type="checkbox" name="Artanis">Artanis
-                  <br>
-                </div>
+                  <?php
+                    if ($_SESSION["Artanis"] == 1) {
+                     echo "<div class=\"unit-display\" id=\"content-ar\">
+                      <input class=\"unit-input\" type=\"checkbox\" name=\"Artanis\">
+                    </div>"
+                    }
+                  ?>
               </div>
             </div>
           </div>
