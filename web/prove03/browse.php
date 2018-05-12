@@ -74,7 +74,7 @@
                 <div class="unit-display" id="content-ar">
                   <img class="mineral-icon" src="resources/minerals.png">500<br>    
                   <img src="resources/artanis.png" alt="Artanis">
-                  <input id="artanis-check" class="unit-input" type="checkbox" name="Artanis">Artanis
+                  <input class="unit-input" type="number" min="0" max="1" name="Artanis" <?php echo "value=\"" . $_SESSION["Artanis"] . "\""?>>Artanis
                   <br>
                 </div>    
               </div>
