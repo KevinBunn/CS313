@@ -42,10 +42,10 @@
       </div>
       <form>
         <div class="container">
-          <div class="row justify-content-center">
+         <form>   
+          <div class="form-group row justify-content-center">
             <div class="col-lg-6">
               <div id="content">
-                 <form>   
                 <div class="unit-display" id="content-dt">
                   <img class="mineral-icon" src="resources/minerals.png">100<br>    
                   <img src="resources/dark_templar.png" alt="Dark Templar">
@@ -73,11 +73,11 @@
                   <img src="resources/artanis.png" alt="Artanis">
                   <input class="unit-input" type="checkbox" name="Artanis">Artanis
                   <br>
-                </div>
-                </form>      
+                </div>    
               </div>
             </div>
           </div>
+        </form>       
         </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
