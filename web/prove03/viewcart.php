@@ -45,7 +45,7 @@
                   <?php
                     if ($_SESSION["Artanis"] == 1) {
                      echo "<div class=\"unit-display\" id=\"content-ar\">
-                      <input class=\"unit-input\" type=\"checkbox\" name=\"Artanis\">
+                      <img src=\"resources/artanis.png\" alt=\"Artanis\">
                     </div>"
                     }
                   ?>
