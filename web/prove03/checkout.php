@@ -35,12 +35,13 @@
           </div>
       </div> 
     </div>
+      </div>    
     <div class="container">
       <div class="row">
         <div class="col-lg-4">
         <form action="<?php echo    htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             Address: <input type="text" name="Address"><br>
-            City: <input type="text" name="City">
+            City: <input type="text" name="City"><br>
             State: <input type="text" name="State">
             Zip: <input type="text" name="Zip"><br>
             <input type="submit">
