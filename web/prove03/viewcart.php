@@ -49,7 +49,7 @@
                     }
                   ?>
                 <div>
-                    <a href="confirmation.php" class="cart-button btn btn-secondary btn-sm active" role="button" aria-pressed="false" id="custom-button">Confirm Selection</a>
+                    <a href="checkout.php" class="cart-button btn btn-secondary btn-sm active" role="button" aria-pressed="false" id="custom-button">Confirm Selection</a>
                 </div> 
               </div>
             </div>

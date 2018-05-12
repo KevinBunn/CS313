@@ -7,5 +7,11 @@
    $_SESSION["Artanis"] = 0;
    $_SESSION["TotalMinerals"] = 2000;
    $_SESSION['units'] = '';
+
+    $_SESSION["Address"] = '';
+    $_SESSION["City"] = '';
+    $_SESSION["State"] = '';
+    $_SESSION["Zip"] = '';
+
    header('Location: browse.php');
 ?>
