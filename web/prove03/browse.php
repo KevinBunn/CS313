@@ -38,7 +38,7 @@
           <div class="col-lg-6">
               <div id="mineral-display">
                 <span>Budgeted Minerals</span><br>
-                <span><img class="mineral-icon" src="resources/minerals.png"><?php echo $_SESSION["TotalMinerals"]; ?></span>
+                <span><img class="mineral-icon" src="resources/minerals.png">2000</span>
               </div>
           </div>
         </div>
