@@ -26,7 +26,7 @@
   <div class="container">
       <div class="row">
         <div class="col-lg-12">
-            <div id="content">
+            <div id="content" style="text-align: center">
                 <h1>Choose Carefully Excecutor,</h1><br> <p> Adun needs your help, send an army in with what resources we have left.</p>
             </div>
         </div>
