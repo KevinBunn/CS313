@@ -1,16 +1,5 @@
 <?php
   session_start();
-
-// foreach($array as $key => $value)
-  $unit_costs = array(
-    "DarkTemplar" => 100,
-    "Stalker" => 150,
-    "Colossus" => 300,
-    "Pheonix" => 100,
-    "Artanis" => 500,
-  );
-  
-  $_SESSION['unit_costs'] = $unit_costs;
 ?>
 <!DOCTYPE html>
 <html>
