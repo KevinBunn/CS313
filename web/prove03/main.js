@@ -17,3 +17,7 @@ for (var i = 0; i < formInputs.length; i++) {
     formInputs[i].addEventListener("click", (event) => addToSession(event));
     formInputs[i].addEventListener("keyup", (event) => addToSession(event));
 }
+
+function checkout(){
+    document.location.href = "confirmation.php";
+}

@@ -44,7 +44,7 @@
             City:<br><input type="text" name="City"><br>
             State:<br><input style="width: 100px" type="text" name="State"><br>
             Zip:<br><input style="width: 50px" type="text" name="Zip"><br>
-            <input style="margin-top: 8px" type="submit">
+            <input style="margin-top: 8px" type="submit" onclick="checkout()">
         </form>
         </div>    
       </div>      
