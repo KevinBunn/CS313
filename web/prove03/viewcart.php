@@ -47,9 +47,6 @@
                       <img src=\"resources/artanis.png\" alt=\"Artanis\">
                     </div>";
                     }
-                    else {
-                        echo $_SESSION["Artanis"];
-                    }
                   ?>
               </div>
             </div>
