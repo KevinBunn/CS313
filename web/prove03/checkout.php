@@ -8,21 +8,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <?php
-      if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $_SESSION["Address"] = test_input($_POST["Address"]);
-        $_SESSION["City"] = test_input($_POST["City"]);
-        $_SESSION["State"] = test_input($_POST["State"]);
-        $_SESSION["Zip"] = test_input($_POST["Zip"]);
-      } 
 
-        function test_input($data) {
-            $data = trim($data);
-            $data = stripslashes($data);
-            $data = htmlspecialchars($data);
-            return $data;
-        }
-      ?>
     <header><?php include 'navbar.php'?></header>
       
     <div id="title">   
@@ -39,12 +25,12 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-4">
-        <form action="<?php echo    htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+        <form action="redirect.php" method="post">
             Address:<br><input type="text" name="Address"><br>
             City:<br><input type="text" name="City"><br>
             State:<br><input style="width: 100px" type="text" name="State"><br>
             Zip:<br><input style="width: 50px" type="text" name="Zip"><br>
-            <input style="margin-top: 8px" type="submit" onclick="checkout()">
+            <input style="margin-top: 8px" type="submit" name="submit" value="submit">
         </form>
         </div>    
       </div>      
