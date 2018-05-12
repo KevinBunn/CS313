@@ -7,9 +7,9 @@ function addToSession(event) {
     console.log(name);
     console.log(value);
     
-    if (event.name == "Artanis") {
+    if (name == "Artanis") {
         var checkedValue = document.querySelector('#artanis-check').checked;
-        console.dir(checkedValue);
+        console.log(checkedValue);
     }
     
     xhttp.open("POST", "add.php", true);
