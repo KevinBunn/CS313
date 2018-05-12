@@ -55,6 +55,6 @@ input {
 input[type="number"] {
   width: 45px;
 }
-input[name="Zip"] {
-  width: 100px;
+input[type="text"] {
+    margin-left: 0px;
 }

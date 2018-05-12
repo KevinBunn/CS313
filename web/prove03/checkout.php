@@ -43,7 +43,7 @@
             Address:<br><input type="text" name="Address"><br>
             City:<br><input type="text" name="City"><br>
             State: <input style="width: 100px" type="text" name="State">
-            Zip: <input type="text" name="Zip"><br>
+            Zip: <input style="width: 50px" type="text" name="Zip"><br>
             <input type="submit">
         </form>
         </div>    
