@@ -21,10 +21,11 @@
   </head>
   <body>
     <header id="header"><?php include 'navbar.php'?></header>
-  <div class="container">
+      
+  <div class="container" id="title">
       <div class="row">
         <div class="col-lg-12">
-            <div id="title">
+            <div id="content">
                 <h1>Choose Carefully Excecutor,</h1><br> <p> Adun needs your help, send an army in with what resources we have left.</p>
             </div>
         </div>
