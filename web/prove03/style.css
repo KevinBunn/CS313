@@ -1,4 +1,4 @@
-.confirmation {
+body[id="confirmation"] {
     background: url("resources/auir.jpg");
 }
 body {
