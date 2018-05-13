@@ -24,12 +24,20 @@
         <div class="container">
           <div class="row justify-content-between">
             <div class="col-lg-4">
+              <div><p>Army Power: <?php 
+                    echo (($_SESSION["DarkTemplar"] * 8) + ($_SESSION["Stalker"] * 12) + ($_SESSION["Colossus"] * 20) + ($_SESSION["Pheonix"] * 5) + ($_SESSION["Artanis"] * 40))
+                    ?>
+                    </p>
+                </div>    
               <div class="unit-display" id="content-dt">    
                 <img src="resources/dark_templar.png" alt="Dark Templar">
                 <?php echo "<h1>" . $_SESSION["DarkTemplar"] . "</h1>"?>
             </div>  
           </div>
           <div class="col-lg-4">
+            <div>
+                <p>Army Power: 110</p>
+            </div>  
             <div style="text-align: right" class="unit-display" id="content-dt">
                 <h1>22</h1>
                 <img src="resources/zergling.png" alt="Dark Templar">
