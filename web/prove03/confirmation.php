@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
-  <body>
+  <body style="background: url("resources/auir.jpg")">
     <header><?php include 'navbar.php'?></header>
     <div id="title">   
       <div class="container">
