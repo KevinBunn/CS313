@@ -1,5 +1,7 @@
 body[id="confirmation"] {
     background: url("resources/auir.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 body {
   background: url("resources/spear.jpg");
