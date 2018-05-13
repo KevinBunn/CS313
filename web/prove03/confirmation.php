@@ -50,7 +50,10 @@
                   <img src="resources/colossus.png" alt="Colossus">
                   <?php echo "<h1>" . $_SESSION["Colossus"] . "</h1>"?>
                 </div>
-              </div>    
+              </div>
+              <div class="col-lg-4">
+                <h1>VS.</h1>
+              </div>
           </div>
           <div class="row">
               <div class="col-lg-4">
