@@ -1,5 +1,6 @@
 <?php
   session_start()
+  $my_army_total = (($_SESSION["DarkTemplar"] * 8) + ($_SESSION["Stalker"] * 12) + ($_SESSION["Colossus"] * 20) + ($_SESSION["Pheonix"] * 5) + ($_SESSION["Artanis"] * 40));
 ?>
 <html>
   <head>
@@ -14,7 +15,7 @@
           <div class="row">
             <div class="col-lg-12">
                 <div id="content" style="text-align: center">
-                    <h2><?php if ((($_SESSION["DarkTemplar"] * 8) + ($_SESSION["Stalker"] * 12) + ($_SESSION["Colossus"] * 20) + ($_SESSION["Pheonix"] * 5) + ($_SESSION["Artanis"] * 40)) >= 125) {
+                    <h2><?php if ($my_army_total >= 125) {
                         echo "Victory!";
                     }
                         else {
@@ -31,7 +32,7 @@
           <div class="row justify-content-between">
             <div class="col-lg-4">
               <div><p style="padding-left: 10px">Army Power: <?php 
-                    echo (($_SESSION["DarkTemplar"] * 8) + ($_SESSION["Stalker"] * 12) + ($_SESSION["Colossus"] * 20) + ($_SESSION["Pheonix"] * 5) + ($_SESSION["Artanis"] * 40))
+                    echo $my_army_total
                     ?>
                     </p>
                 </div>    
