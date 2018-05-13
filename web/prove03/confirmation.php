@@ -24,7 +24,7 @@
         <div class="container">
           <div class="row justify-content-between">
             <div class="col-lg-4">
-              <div><p>Army Power: <?php 
+              <div><p style="padding-left: 10px">Army Power: <?php 
                     echo (($_SESSION["DarkTemplar"] * 8) + ($_SESSION["Stalker"] * 12) + ($_SESSION["Colossus"] * 20) + ($_SESSION["Pheonix"] * 5) + ($_SESSION["Artanis"] * 40))
                     ?>
                     </p>
@@ -36,7 +36,7 @@
           </div>
           <div class="col-lg-4">
             <div>
-                <p style="text-align: right">Army Power: 110</p>
+                <p style="text-align: right; padding-right: 10px;">Army Power: 110</p>
             </div>  
             <div style="text-align: right" class="unit-display" id="content-dt">
                 <h1>22</h1>
