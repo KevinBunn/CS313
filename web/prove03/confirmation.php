@@ -18,7 +18,7 @@
                         echo "Victory!";
                     }
                         else {
-                            echo "Defeat!"
+                            echo "Defeat!";
                         }
                         ?></h2>
                     <p>at <?php echo $_SESSION["Address"] . " " . $_SESSION["City"] . ", " . $_SESSION["State"] . ". " . $_SESSION["Zip"] . "."; ?></p>
