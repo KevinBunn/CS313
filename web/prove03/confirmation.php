@@ -14,7 +14,13 @@
           <div class="row">
             <div class="col-lg-12">
                 <div id="content" style="text-align: center">
-                    <h2>Results</h2>
+                    <h2><?php if ((($_SESSION["DarkTemplar"] * 8) + ($_SESSION["Stalker"] * 12) + ($_SESSION["Colossus"] * 20) + ($_SESSION["Pheonix"] * 5) + ($_SESSION["Artanis"] * 40)) >= 125) {
+                        echo "Victory!";
+                    }
+                        else {
+                            echo "Defeat!"
+                        }
+                        ?></h2>
                     <p>at <?php echo $_SESSION["Address"] . " " . $_SESSION["City"] . ", " . $_SESSION["State"] . ". " . $_SESSION["Zip"] . "."; ?></p>
             </div>
           </div>
@@ -36,10 +42,10 @@
           </div>
           <div class="col-lg-4">
             <div>
-                <p style="text-align: right; padding-right: 10px;">Army Power: 110</p>
+                <p style="text-align: right; padding-right: 10px;">Army Power: 125</p>
             </div>  
             <div style="text-align: right" class="unit-display" id="content-dt">
-                <h1>22</h1>
+                <h1>25</h1>
                 <img src="resources/zergling.png" alt="Dark Templar">
             </div>  
           </div>
