@@ -1,3 +1,6 @@
+.confirmation {
+    background: url("resources/auir.jpg");
+}
 body {
   background: url("resources/spear.jpg");
   background-size: cover;
