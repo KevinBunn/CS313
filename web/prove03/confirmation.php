@@ -1,5 +1,5 @@
 <?php
-  session_start()
+  session_start();
   $my_army_total = (($_SESSION["DarkTemplar"] * 8) + ($_SESSION["Stalker"] * 12) + ($_SESSION["Colossus"] * 20) + ($_SESSION["Pheonix"] * 5) + ($_SESSION["Artanis"] * 40));
 ?>
 <html>
@@ -15,12 +15,13 @@
           <div class="row">
             <div class="col-lg-12">
                 <div id="content" style="text-align: center">
-                    <h2><?php if ($my_army_total >= 125) {
+                    <h2><?php 
+                    if ($my_army_total >= 125) {
                         echo "Victory!";
                     }
-                        else {
-                            echo "Defeat!";
-                        }
+                    else {
+                        echo "Defeat!";
+                    }
                         ?></h2>
                     <p>at <?php echo $_SESSION["Address"] . " " . $_SESSION["City"] . ", " . $_SESSION["State"] . ". " . $_SESSION["Zip"] . "."; ?></p>
             </div>
