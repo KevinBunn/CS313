@@ -36,7 +36,7 @@
           </div>
           <div class="col-lg-4">
             <div>
-                <p>Army Power: 110</p>
+                <p style="text-align: right">Army Power: 110</p>
             </div>  
             <div style="text-align: right" class="unit-display" id="content-dt">
                 <h1>22</h1>
