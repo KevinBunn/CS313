@@ -30,9 +30,9 @@
             </div>  
           </div>
           <div class="col-lg-4">
-            <div class="unit-display" id="content-dt">    
-                <img src="resources/zergling.png" alt="Dark Templar">
+            <div style="text-align: right" class="unit-display" id="content-dt">
                 <h1>22</h1>
+                <img src="resources/zergling.png" alt="Dark Templar">
             </div>  
           </div>
         </div>
