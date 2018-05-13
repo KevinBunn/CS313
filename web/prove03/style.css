@@ -53,3 +53,7 @@ input[type="number"] {
   width: 45px;
   margin: 8px;
 }
+#versus {
+    text-align: center;
+    font-size: 20;
+}

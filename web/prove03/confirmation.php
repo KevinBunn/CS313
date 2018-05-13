@@ -52,7 +52,7 @@
                 </div>
               </div>
               <div class="col-lg-4">
-                <h1>VS.</h1>
+                <h1 id="versus">VS.</h1>
               </div>
           </div>
           <div class="row">
