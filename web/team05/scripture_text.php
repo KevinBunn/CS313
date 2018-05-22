@@ -20,6 +20,10 @@ $stmt->execute();
 $info = $stmt->fetchAll(PDO::FETCH_ASSOC);
   
 echo '<p><strong>' . $info[0]['book'] . ' ' . $info[0]['chapter'] . ':' . $info[0]['verse'] . '</strong> - ' . $info[0]['content'] . '</p>';
+  
+echo '<img src="https://media.ldscdn.org/images/media-library/by-topic/christ-and-the-atonement/meme-hallstrom-rock-1390551-gallery.jpg"/>';
 ?>
+  
+
   </body>
 </html>
