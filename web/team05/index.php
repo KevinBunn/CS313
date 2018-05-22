@@ -25,7 +25,7 @@ $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
   
 if(isset($_POST["search-text"])) {
   foreach ($rows as $row){
-      if (strpos($_POST['search-text'],$row['book'])) {
+      if ($_POST['search-text'] == $row['book']) {
         echo '<p><strong>' . $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse'] . '</strong> - ' . '"' . $row['content'] . '"</p>';
       }
   }
