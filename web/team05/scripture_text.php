@@ -21,7 +21,7 @@ $info = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 var_dump($info);
   
-echo '<p><strong>' . $info['book'] . ' ' . $info['chapter'] . ':' . $info['verse'] . '</strong> - ' . $info['content'] . '</p>';
+echo '<p><strong>' . $info[0]['book'] . ' ' . $info[0]['chapter'] . ':' . $info[0]['verse'] . '</strong> - ' . $info[0]['content'] . '</p>';
 ?>
   </body>
 </html>
