@@ -18,8 +18,6 @@ $scripture = $_GET['scripture_id'];
 $stmt = $db->prepare("SELECT * FROM scriptures where scripture_id=$scripture");
 $stmt->execute();
 $info = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-var_dump($info);
   
 echo '<p><strong>' . $info[0]['book'] . ' ' . $info[0]['chapter'] . ':' . $info[0]['verse'] . '</strong> - ' . $info[0]['content'] . '</p>';
 ?>
