@@ -20,11 +20,8 @@ $stmt->execute();
 $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
   
   foreach ($rows as $row) {
-    echo '<p><strong>' . $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse'] . '</strong> - ' . '"' . $row['content'] . '</p>';
+    echo '<p><strong>' . $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse'] . '</strong> - ' . '"' . $row['content'] . '"</p>';
   }
 ?>
-
-  
-  
 </body>
 </html>
