@@ -17,11 +17,9 @@ $scripture = $_GET['scripture_id'];
   
 $stmt = $db->prepare("SELECT content FROM scriptures where scripture_id=$scripture");
 $stmt->execute();
-$content = $stmt->fetch(PDO::FETCH_ASSOC);
-  
-var_dump($content);
+$content = $stmt->fetch();
 
-echo '<p>' . $content . '</p>';
+echo '<p>' . $content['content'] . '</p>';
 ?>
   </body>
 </html>
