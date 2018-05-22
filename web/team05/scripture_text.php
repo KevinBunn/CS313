@@ -15,11 +15,11 @@ $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPass
 $scripture = $_GET['scripture_id'];
 
   
-$stmt = $db->prepare("SELECT content FROM scriptures where scripture_id=$scripture");
+$stmt = $db->prepare("SELECT * FROM scriptures where scripture_id=$scripture");
 $stmt->execute();
-$content = $stmt->fetch();
+$content = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-echo '<p>' . $content['content'] . '</p>';
+echo '<p><strong>' . $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse'] . '</strong> - ' . $content['content'] . '</p>';
 ?>
   </body>
 </html>
