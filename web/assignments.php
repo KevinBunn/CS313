@@ -55,6 +55,7 @@
             <div id="content">
                 <h1>Assignments</h1>
                 <p><a href="prove03/">Shopping Cart</a></p>
+                <p><a href="workflow/">Workflow Application</a></p>
             </div>
         </div>
     </div>
