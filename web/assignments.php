@@ -54,8 +54,8 @@
         <div class="col-lg-12">
             <div id="content">
                 <h1>Assignments</h1>
-                <p><a href="prove03/">Shopping Cart</a></p>
-                <p><a href="workflow/">Workflow Application</a></p>
+                <p><a class="btn btn-secondary btn-sm active" role="button" aria-pressed="true" id="custom-button"href="prove03/">Shopping Cart</a></p>
+                <p><a class="btn btn-secondary btn-sm active" role="button" aria-pressed="true" id="custom-button"href="workflow/">Workflow Application</a></p>
             </div>
         </div>
     </div>
