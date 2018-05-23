@@ -1,5 +1,5 @@
 <html>
 <body>
-    <h1>dashboard</h1>
+    <h1>dashboard for <?php echo $_SESSION['user'] ?></h1>
 </body>
 </html>
