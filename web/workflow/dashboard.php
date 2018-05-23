@@ -7,11 +7,6 @@
 
 <html>
 <body>
-    <h1>dashboard for 
-        <?php 
-            if (isset($_SESSION['user']) {
-                echo $_SESSION['user'];
-            }
-        ?></h1>
+    <h1>dashboard for</h1>
 </body>
 </html>
