@@ -33,6 +33,7 @@
   
     if (isset($_POST["username"]) && isset($_POST["password"])) {
       $successful_login = FALSE;
+      var_dump($rows);
       foreach ($rows as $row) {
         if ($row["username"] == $_POST["username"] && $row["password"] == $_POST["password"])
           $successful_login = TRUE;
