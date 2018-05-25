@@ -37,7 +37,7 @@
         foreach($categories as $category) {
             echo '<li>' . $category["name"];
             
-            $category_id = category["category_id"];
+            $category_id = $category["category_id"];
             $task_query = "SELECT * FROM task WHERE category_id = $category_id";
             $task_stmt = $db->prepare($task_query);
             $task_stmt->execute();
