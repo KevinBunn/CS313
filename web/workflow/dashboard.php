@@ -29,10 +29,10 @@
     $stmt->execute();
     $projects = $stmt->fetchALL(PDO::FETCH_ASSOC);
   
-    //var_dump($projects);
+    var_dump($projects);
     
     foreach ($projects as $project) {
-      echo '<a href="project.php?project=' . $project["project_id"] . '">' . $project["name"] . "</a>";
+      echo '<a href="project.php?project=' . $project["project_id"] . '">' . $project["name"] . '</a>';
     }
     
   ?>
