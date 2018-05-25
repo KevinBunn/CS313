@@ -27,7 +27,7 @@
 
     $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
   
-    $stmt = $db->prepare('SELECT username, password FROM user');
+    $stmt = $db->prepare('SELECT username, password FROM "user";');
     $stmt->execute();
     $rows = $stmt->fetchALL(PDO::FETCH_ASSOC);
   
