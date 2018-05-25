@@ -28,6 +28,7 @@
     $stmt->execute();
     $projects = $stmt->fetchALL(PDO::FETCH_ASSOC);
   
+    var_dump($projects);
     foreach ($projects as $project) {
       echo "<div>$project</div>";
     }
