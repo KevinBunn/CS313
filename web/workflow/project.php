@@ -33,20 +33,14 @@
         $stmt->execute();
         $categories = $stmt->fetchALL(PDO::FETCH_ASSOC);
         
-        $category_id = category["category_id"];
-        $task_query = "SELECT * FROM task WHERE category_id = $category_id";
-        $stmt = $db->prepare($category_query);
-        $stmt->execute();
-        $tasks = $stmt->fetchALL(PDO::FETCH_ASSOC);
-        
         //echo '<div id="content">';
         foreach($categories as $category) {
             echo '<li>' . $category["name"];
             
             $category_id = category["category_id"];
             $task_query = "SELECT * FROM task WHERE category_id = $category_id";
-            $stmt = $db->prepare($category_query);
-            $stmt->execute();
+            $task_stmt = $db->prepare($category_query);
+            $task_stmt->execute();
             $tasks = $stmt->fetchALL(PDO::FETCH_ASSOC);
             var_dump($tasks);
             if (count($task) > 0) {
