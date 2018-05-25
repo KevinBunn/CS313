@@ -48,6 +48,7 @@
             $stmt = $db->prepare($category_query);
             $stmt->execute();
             $tasks = $stmt->fetchALL(PDO::FETCH_ASSOC);
+            var_dump($tasks);
             if (count($task) > 0) {
                 echo "<ul>";
                 foreach ($tasks as $task) {
