@@ -31,7 +31,7 @@
     var_dump($projects);
     
     foreach ($projects as $project) {
-      echo "<div>$project[0]</div>";
+      echo "<div>" . $project["name"] . "</div>";
     }
   ?>
 </body>
