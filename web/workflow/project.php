@@ -43,7 +43,7 @@
                 echo "prepare failed (" . $db->errno . ") " . $db->error;
             }
             if (!$task_stmt->execute()) {
-                echo "Execute failed: (" . $task_stmt->errno . ") " . $task_stmt->error;;
+                echo "Execute failed: (" . $task_stmt->errno . ") " . $task_stmt->error;
             }
             $tasks = $stmt->fetchALL(PDO::FETCH_ASSOC);
             var_dump($tasks);
