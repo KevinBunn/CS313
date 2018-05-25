@@ -10,6 +10,7 @@
     <h1>dashboard for
         <?php echo $_SESSION['user']; ?>
     </h1>
+    <div>
   <?php 
     $dbUrl = getenv('DATABASE_URL');
 
@@ -24,15 +25,17 @@
     $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
     $current_username = $_SESSION['user'];
   
-    $stmt = $db->prepare("SELECT name FROM project INNER JOIN user_to_project ua ON ua.project_id = project.project_id INNER JOIN \"user\" u ON u.user_id = ua.user_id WHERE u.username = '$current_username';");
+    $stmt = $db->prepare("SELECT project_id, name FROM project INNER JOIN user_to_project ua ON ua.project_id = project.project_id INNER JOIN \"user\" u ON u.user_id = ua.user_id WHERE u.username = '$current_username';");
     $stmt->execute();
     $projects = $stmt->fetchALL(PDO::FETCH_ASSOC);
   
-    var_dump($projects);
+    //var_dump($projects);
     
     foreach ($projects as $project) {
-      echo "<div>" . $project["name"] . "</div>";
+      echo '<div><a href="project.php?project=' . $project["project_id"] . '">' . $project["name"] . "</a></div>";
     }
+    
   ?>
+    </div>
 </body>
 </html>
