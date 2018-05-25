@@ -41,7 +41,7 @@
         header('Location: dashboard.php');
       }
       else
-        echo "<p style=\"text-color: red\">Username or Password is incorrect</p>";
+        echo "<p style=\"color: red\">Username or Password is incorrect</p>";
     }
   ?>
 </body>
