@@ -38,15 +38,15 @@
             echo '<li>' . $category["name"];
             
             $category_id = $category["category_id"];
-            $task_query = "SELECT * FROM task";
+            $task_query = "SELECT * FROM task WHERE category_id = $category_id";
             if (!$task_stmt = $db->prepare($task_query)) {
                 echo "prepare failed (" . $db->errno . ") " . $db->error;
             }
             if (!$task_stmt->execute()) {
                 echo "Execute failed: (" . $task_stmt->errno . ") " . $task_stmt->error;
             }
-            $tasks = $stmt->fetchALL(PDO::FETCH_ASSOC);
-            var_dump($tasks);
+            $tasks = $task_stmt->fetchALL(PDO::FETCH_ASSOC);
+            //var_dump($tasks);
             if (count($tasks) > 0) {
                 echo "<ul>";
                 foreach ($tasks as $task) {
