@@ -39,6 +39,7 @@
           $successful_login = TRUE;
       }
       if($successful_login){
+        $_SESSION["user"] = $_POST["username"];
         header('Location: dashboard.php');
       }
       else
