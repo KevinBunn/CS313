@@ -38,7 +38,7 @@
             echo '<li>' . $category["name"];
             
             $category_id = $category["category_id"];
-            $task_query = "SELECT * FROM task WHERE category_id = $category_id";
+            $task_query = "SELECT * FROM task";
             if (!$task_stmt = $db->prepare($task_query)) {
                 echo "prepare failed (" . $db->errno . ") " . $db->error;
             }
