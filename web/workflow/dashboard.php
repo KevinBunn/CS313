@@ -32,7 +32,7 @@
     //var_dump($projects);
     
     foreach ($projects as $project) {
-      echo '<div><a href="project.php?project=' . $project["project_id"] . '">' . $project["name"] . "</a></div>";
+      echo '<a href="project.php?project=' . $project["project_id"] . '">' . $project["name"] . "</a>";
     }
     
   ?>
