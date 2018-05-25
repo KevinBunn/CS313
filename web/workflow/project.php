@@ -39,8 +39,12 @@
             
             $category_id = $category["category_id"];
             $task_query = "SELECT * FROM task WHERE category_id = $category_id";
-            $task_stmt = $db->prepare($task_query);
-            $task_stmt->execute();
+            if (!$task_stmt = $db->prepare($task_query)) {
+                echo "prepare failed (" . $db->errno . ") " . $db->error;
+            }
+            if (!$task_stmt->execute()) {
+                echo "Execute failed: (" . $task_stmt->errno . ") " . $task_stmt->error;;
+            }
             $tasks = $stmt->fetchALL(PDO::FETCH_ASSOC);
             var_dump($tasks);
             if (count($tasks) > 0) {
