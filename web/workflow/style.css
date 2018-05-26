@@ -3,6 +3,8 @@
 }
 .category {
   background-color: antiquewhite;
+  width: 30%;
+  margin-left: 5%;
 }
 .task {
   border-bottom: 1px solid burlywood;
