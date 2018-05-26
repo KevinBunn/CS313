@@ -10,8 +10,9 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     </head>
 <body>
-    <div>
-        <h1>NAVBAR HERE</h1>
+    <div class="navbar">
+        <h1><?php echo $_GET['project']; ?></h1>
+        <div id="logout-button"><a href="logout.php">logout</a></div>
     </div>
     <div class="content">
       <div class="category-row">

@@ -4,6 +4,11 @@ html {
 body {
   background-color: lightcoral;
 }
+.navbar {
+  border-bottom: 1px solid;
+  border-bottom-color: aliceblue;
+  background-color: azure;
+}
 .content{
   
 }
@@ -35,4 +40,7 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
   border-top: 1px solid burlywood;
+}
+#logout-button {
+  text-align: right;
 }

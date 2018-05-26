@@ -10,9 +10,12 @@
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
 <body>
+  <div class="navbar">
     <h1>dashboard for
         <?php echo $_SESSION['user']; ?>
     </h1>
+    <div id="logout-button"><a href="logout.php">logout</a></div>
+    </div>
     <div class="category-row">
   <?php 
     $dbUrl = getenv('DATABASE_URL');
