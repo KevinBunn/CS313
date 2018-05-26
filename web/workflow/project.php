@@ -14,7 +14,7 @@
         <h1>NAVBAR HERE</h1>
     </div>
     <div class="content">
-      <div class="category">
+      <div class="category-row">
         <?php 
         $dbUrl = getenv('DATABASE_URL');
 
@@ -33,9 +33,8 @@
         $stmt->execute();
         $categories = $stmt->fetchALL(PDO::FETCH_ASSOC);
         
-        //echo '<div id="content">';
         foreach($categories as $category) {
-            echo '<div class="category-text">' . $category["name"];
+            echo '<div class="category">' . $category["name"];
             
             $category_id = $category["category_id"];
             $task_query = "SELECT * FROM task WHERE category_id = $category_id";
@@ -46,7 +45,6 @@
                 echo "Execute failed: (" . $task_stmt->errno . ") " . $task_stmt->error;
             }
             $tasks = $task_stmt->fetchALL(PDO::FETCH_ASSOC);
-            //var_dump($tasks);
             if (count($tasks) > 0) {
                 echo '<div class="task">';
                 foreach ($tasks as $task) {

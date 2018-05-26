@@ -1,5 +1,11 @@
-.content{
+html {
+  height: 100%;
+}
+body {
   background-color: lightcoral;
+}
+.content{
+  
 }
 .category {
   background-color: antiquewhite;
