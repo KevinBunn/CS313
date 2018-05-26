@@ -12,6 +12,7 @@ body {
   width: 285px;
   margin-left: 5%;
   border: 3px solid burlywood;
+  height: max-content;
 }
 .category-title {
   border-bottom: 1px solid burlywood;
@@ -31,5 +32,7 @@ body {
   padding-right: 10px;
 }
 .task {
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-top: 1px solid burlywood;
 }
