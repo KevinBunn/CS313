@@ -9,8 +9,14 @@ body {
 }
 .category {
   background-color: antiquewhite;
-  width: 30%;
+  width: 285px;
   margin-left: 5%;
+  border: 3px solid burlywood;
+}
+.category-title {
+  border-bottom: 1px solid burlywood;
+  font-size: 24;
+  text-align: center;
 }
 .category-row {
   display: flex;

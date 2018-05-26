@@ -34,7 +34,7 @@
         $categories = $stmt->fetchALL(PDO::FETCH_ASSOC);
         
         foreach($categories as $category) {
-            echo '<div class="category">' . $category["name"];
+            echo '<div class="category"><div class="category-title">' . $category["name"] . '</div>';
             
             $category_id = $category["category_id"];
             $task_query = "SELECT * FROM task WHERE category_id = $category_id";
