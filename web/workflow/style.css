@@ -1,0 +1,9 @@
+.content{
+  background-color: lightcoral;
+}
+.category {
+  background-color: antiquewhite;
+}
+.task {
+  border: 1px solid yellow;
+}

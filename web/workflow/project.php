@@ -13,8 +13,8 @@
     <div>
         <h1>NAVBAR HERE</h1>
     </div>
-    
-    <ul class="category">
+    <div class="content">
+      <ul class="category">
         <?php 
         $dbUrl = getenv('DATABASE_URL');
 
@@ -50,7 +50,7 @@
             if (count($tasks) > 0) {
                 echo "<ul>";
                 foreach ($tasks as $task) {
-                    echo '<li>' . $task["name"] . '</li>';
+                    echo '<li class="task">' . $task["name"] . '</li>';
                 }
                 echo "</ul>";
             }
@@ -58,6 +58,7 @@
         }
         
         ?>
-    </ul>
+      </ul>
+    </div>
 </body>
 </html>
