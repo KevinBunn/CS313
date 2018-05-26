@@ -13,7 +13,7 @@
     <h1>dashboard for
         <?php echo $_SESSION['user']; ?>
     </h1>
-    <div>
+    <div class="category-row">
   <?php 
     $dbUrl = getenv('DATABASE_URL');
 
