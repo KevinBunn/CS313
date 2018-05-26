@@ -3,6 +3,7 @@ html {
 }
 body {
   background-color: lightcoral;
+  width: 100%
 }
 .navbar {
   border-bottom: 1px solid;
@@ -28,6 +29,7 @@ body {
   display: flex;
   overflow-x: auto;
   flex-flow: row;
+  margin-top: 38px;
 }
 .task-checkbox {
   padding-right: 10px;
