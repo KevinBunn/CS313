@@ -14,7 +14,7 @@
         <h1>NAVBAR HERE</h1>
     </div>
     <div class="content">
-      <ul class="category">
+      <div class="category">
         <?php 
         $dbUrl = getenv('DATABASE_URL');
 
@@ -35,7 +35,7 @@
         
         //echo '<div id="content">';
         foreach($categories as $category) {
-            echo '<li>' . $category["name"];
+            echo '<div class="category-text">' . $category["name"];
             
             $category_id = $category["category_id"];
             $task_query = "SELECT * FROM task WHERE category_id = $category_id";
@@ -48,17 +48,17 @@
             $tasks = $task_stmt->fetchALL(PDO::FETCH_ASSOC);
             //var_dump($tasks);
             if (count($tasks) > 0) {
-                echo "<ul>";
+                echo '<div class="task">';
                 foreach ($tasks as $task) {
-                    echo '<li class="task">' . $task["name"] . '</li>';
+                    echo '<div class="task-content">' . $task["name"] . '</div>';
                 }
-                echo "</ul>";
+                echo "</div>";
             }
-            echo "</li>";
+            echo "</div>";
         }
         
         ?>
-      </ul>
+      </div>
     </div>
 </body>
 </html>
