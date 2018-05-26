@@ -11,7 +11,7 @@
     </head>
 <body>
     <div class="navbar">
-        <div><?php echo $_GET['project']; ?></div>
+        <div>Navbar</div>
         <div id="logout-button"><a href="logout.php">logout</a></div>
     </div>
     <div class="content">
