@@ -23,6 +23,9 @@ body {
   overflow-x: auto;
   flex-flow: row;
 }
+.task-checkbox {
+  padding-right: 10px;
+}
 .task-column {
   padding-left: 10px;
   padding-right: 10px;
