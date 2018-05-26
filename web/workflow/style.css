@@ -24,8 +24,8 @@ body {
   flex-flow: row;
 }
 .task-column {
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .task {
   border-bottom: 1px solid burlywood;
