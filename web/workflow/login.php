@@ -10,8 +10,8 @@
 <body>
     <h1>Login</h1>
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
-        Username: <input type="text" name="username"><br>
-        Password: <input type="password" name="password">
+        Username: <input type="text" name="username" value="KyleRocks"><br>
+        Password: <input type="password" name="password" value="P@ssw0rd1">
         <input type="submit">
     </form>
     <?php  
