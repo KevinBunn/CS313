@@ -46,9 +46,9 @@
             }
             $tasks = $task_stmt->fetchALL(PDO::FETCH_ASSOC);
             if (count($tasks) > 0) {
-                echo '<div class="task">';
+                echo '<div class="task-column">';
                 foreach ($tasks as $task) {
-                    echo '<div class="task-content">' . $task["name"] . '</div>';
+                    echo '<div class="task">' . $task["name"] . '</div>';
                 }
                 echo "</div>";
             }

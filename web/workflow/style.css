@@ -12,6 +12,15 @@ body {
   width: 30%;
   margin-left: 5%;
 }
+.category-row {
+  display: flex;
+  overflow-x: auto;
+  flex-flow: row;
+}
+.task-column {
+  padding-left: 5px;
+  padding-right: 5px;
+}
 .task {
   border-bottom: 1px solid burlywood;
 }
