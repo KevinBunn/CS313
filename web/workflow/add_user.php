@@ -24,7 +24,7 @@ function ($firstName, $lastName, $username, $password) {
     $stmt->bindValue(':lastname', $lastName, PDO::PARAM_STR);
     $stmt->bindValue(':username', $userame, PDO::PARAM_STR);
     $stmt->bindValue(':password', $password, PDO::PARAM_STR);
-    $stmt->bindValue(':datejoined' time());
+    $stmt->bindValue(':datejoined', time());
     $stmt->execute();
     $rowsChanged = $stmt->rowCount();
     $stmt->closeCursor();
