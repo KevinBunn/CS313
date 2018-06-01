@@ -1,6 +1,6 @@
 <?php 
     session_start();
-    require("web/workflow/dbConnect.php");
+    require("dbConnect.php");
     $db = get_db();
     if (!isset($db)) {
 	   die("DB Connection was not set");
