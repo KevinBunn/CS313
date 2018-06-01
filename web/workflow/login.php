@@ -39,5 +39,6 @@
         echo "<p style=\"color: red\">Username or Password is incorrect</p>";
     }
   ?>
+    <div><a href="signup.php">or signup</a></div>
 </body>
 </html>
