@@ -28,6 +28,7 @@ function ($firstName, $lastName, $username, $password) {
     $stmt->execute();
     $rowsChanged = $stmt->rowCount();
     $stmt->closeCursor();
+    return $rowsChanged;
 }
 
 $rowsAffected = insertNewUser($firstName, $lastName, $username, $password);
