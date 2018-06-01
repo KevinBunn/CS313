@@ -76,14 +76,6 @@ VALUES (
 
 INSERT INTO category (project_id, name, date_created, goal_end_date)
 VALUES (
-    1
-,   'category2'
-,   '2018-01-01 07:00:08'
-,   null
-);
-
-INSERT INTO category (project_id, name, date_created, goal_end_date)
-VALUES (
     2
 ,   'Things I need to do'
 ,   '2018-01-02 07:00:00'
@@ -140,7 +132,7 @@ VALUES (
 
 INSERT INTO task (category_id, name, date_created, goal_end_date, description, priority, severity, user_id, status)
 VALUES (
-    3
+    4
 ,   'Get Married'
 ,   '2018-01-01 08:10:08'
 ,   '2018-12-10 13:00:00'
@@ -153,7 +145,7 @@ VALUES (
 
 INSERT INTO task (category_id, name, date_created, goal_end_date, description, priority, severity, user_id, status)
 VALUES (
-    3
+    4
 ,   'Clean the house'
 ,   '2018-01-01 10:10:23'
 ,   '2018-01-07 13:00:00'
@@ -166,7 +158,7 @@ VALUES (
 
 INSERT INTO task (category_id, name, date_created, goal_end_date, description, priority, severity, user_id, status)
 VALUES (
-    4
+    5
 ,   'Shear'
 ,   '2018-01-01 10:10:23'
 ,   '2018-05-07 13:00:00'
@@ -179,7 +171,7 @@ VALUES (
 
 INSERT INTO task (category_id, name, date_created, goal_end_date, description, priority, severity, user_id, status)
 VALUES (
-    4
+    5
 ,   'Feed'
 ,   '2018-01-01 10:10:23'
 ,   '2018-01-01 20:00:00'

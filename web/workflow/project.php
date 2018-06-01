@@ -3,6 +3,11 @@
     if(isset($_SESSION['user']) === FALSE) {
        header('Location: login.php');
     }
+    require("dbConnect.php");
+    $db = get_db();
+    if (!isset($db)) {
+        die("DB Connection was not set");
+    }
 ?>
 <!DOCTYPE>
 <html>
@@ -17,16 +22,6 @@
     <div class="content">
       <div class="category-row">
         <?php 
-        $dbUrl = getenv('DATABASE_URL');
-
-        $dbopts = parse_url($dbUrl);
-        $dbHost = $dbopts["host"];
-        $dbPort = $dbopts["port"];
-        $dbUser = $dbopts["user"];
-        $dbPassword = $dbopts["pass"];
-        $dbName = ltrim($dbopts["path"],'/'); 
-
-        $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
         $project_id = $_GET['project'];
 
         $category_query = "SELECT category_id, name FROM category WHERE project_id = $project_id";
