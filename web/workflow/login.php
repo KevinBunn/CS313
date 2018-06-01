@@ -1,6 +1,6 @@
 <?php 
     session_start();
-    require("../dbConnect.php");
+    require_once("dbConnect.php");
     $db = get_db();
     if (!isset($db)) {
 	   die("DB Connection was not set");
