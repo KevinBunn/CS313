@@ -44,7 +44,7 @@ try {
         header('Location: login.php');
 }
 catch (PDOException $err) {
-    $_SESSION['signup_error'] = $err->getMessage();
+    $_SESSION['signup_error'] = $err->getCode();
     header('Location: signup.php');
 }
 ?>
