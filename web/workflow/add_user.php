@@ -13,9 +13,8 @@ $username = filter_input(INPUT_POST, 'username', FILTER_SANITIZE_STRING);
 $password = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING);
 $passwordConfirm = filter_input(INPUT_POST, 'password-confim', FILTER_SANITIZE_STRING);
 
-var_dump($password, $passwordConfirm);
 
-if(strcmp($password,$passwordConfirm) != 0) {
+if(strcmp($password,$passwordConfirm) !== 0) {
     $_SESSION['signup_error'] = "passwords do not match";
     header('Location: signup.php');
 }
