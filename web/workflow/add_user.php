@@ -27,7 +27,6 @@ function ($firstName, $lastName, $username, $password) {
     $stmt->bindValue(':datejoined', time());
     $stmt->execute();
     $rowsChanged = $stmt->rowCount();
-    $stmt->closeCursor();
     return $rowsChanged;
 }
 
