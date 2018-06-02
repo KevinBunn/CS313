@@ -44,7 +44,13 @@ try {
         header('Location: login.php');
 }
 catch (PDOException $err) {
-    $_SESSION['signup_error'] = $err->getCode();
-    header('Location: signup.php');
+    if ((int)$err->getCode() == 23505) {
+        $_SESSION['signup_error'] = "username is already taken";
+        header('Location: signup.php');
+    }
+    else {
+        $_SESSION['signup_error'] = $err->getCode();
+        header('Location: signup.php');
+    }
 }
 ?>
