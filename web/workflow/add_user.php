@@ -15,7 +15,7 @@ $passwordConfirm = filter_input(INPUT_POST, 'password-confim', FILTER_SANITIZE_S
 
 
 if(strcmp($password,$passwordConfirm) !== 0) {
-    $_SESSION['signup_error'] = "passwords do not match";
+    $_SESSION['signup_error'] = "$password do not match $passwordConfirm";
     header('Location: signup.php');
 }
 
