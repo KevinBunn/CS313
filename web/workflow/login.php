@@ -19,7 +19,8 @@
         <input type="submit">
     </form>
     <?php  
-    echo now();
+    $timestamp = date('Y-m-d G:i:s');
+    echo $timestamp;
   
     $stmt = $db->prepare('SELECT username, password FROM "user";');
     $stmt->execute();
