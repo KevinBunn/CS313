@@ -25,8 +25,8 @@ function insertNewUser($firstName, $lastName, $username, $password, $db) {
     $stmt->bindValue(':username', $userame, PDO::PARAM_STR);
     $stmt->bindValue(':password', $password, PDO::PARAM_STR);
     $date = new DateTime();
-
-    $stmt->bindValue(':datejoined', $date->getTimestamp());
+    $timestamp = date('Y-m-d G:i:s');
+    $stmt->bindValue(':datejoined', $timestamp);
     $stmt->execute();
     $rowsChanged = $stmt->rowCount();
     $stmt->closeCursor();

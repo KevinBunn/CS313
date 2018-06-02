@@ -19,9 +19,7 @@
         <input type="submit">
     </form>
     <?php  
-    $timestamp = date('Y-m-d G:i:s');
-    echo $timestamp;
-  
+
     $stmt = $db->prepare('SELECT username, password FROM "user";');
     $stmt->execute();
     $rows = $stmt->fetchALL(PDO::FETCH_ASSOC);
