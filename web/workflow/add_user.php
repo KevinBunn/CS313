@@ -28,7 +28,10 @@ function insertNewUser($firstName, $lastName, $username, $password, $db) {
     $stmt->bindValue(':timestamp', $timestamp, PDO::PARAM_INT);
     $date = new DateTime();
 
-    $stmt->execute();
+    if (!$stmt->execute()) {
+        $_SESSION['signup_error'] = "Execute failed: (" . $stmt->errno . ") " . $stmt->error;
+        header('Location: signup.php');
+    }
     $rowsChanged = $stmt->rowCount();
     $stmt->closeCursor();
     return $rowsChanged;
