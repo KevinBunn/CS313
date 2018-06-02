@@ -18,7 +18,7 @@ if($passwordConfirm != $password) {
     header('Location: login.php');
 }
 
-function ($firstName, $lastName, $username, $password) {
+function insertNewUser($firstName, $lastName, $username, $password) {
     $stmt = $db->prepare("INSERT INTO \"user\" (first_name, last_name, username, password, date_joined) VALUES(:firstname, :lastname, :username, :password, datejoined)");
     $stmt->bindValue(':firstname', $firstName, PDO::PARAM_STR);
     $stmt->bindValue(':lastname', $lastName, PDO::PARAM_STR);
@@ -27,6 +27,7 @@ function ($firstName, $lastName, $username, $password) {
     $stmt->bindValue(':datejoined', time());
     $stmt->execute();
     $rowsChanged = $stmt->rowCount();
+    $stmt->closeCursor();
     return $rowsChanged;
 }
 
