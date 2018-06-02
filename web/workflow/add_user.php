@@ -11,11 +11,11 @@ $firstName = filter_input(INPUT_POST, 'first-name', FILTER_SANITIZE_STRING);
 $lastName = filter_input(INPUT_POST, 'last-name', FILTER_SANITIZE_STRING);
 $username = filter_input(INPUT_POST, 'username', FILTER_SANITIZE_STRING);
 $password = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING);
-$passwordConfirm = filter_input(INPUT_POST, 'password-confim', FILTER_SANITIZE_STRING);
+$passwordConfirm = filter_input(INPUT_POST, 'password-confirm', FILTER_SANITIZE_STRING);
 
 
 if(strcmp($password,$passwordConfirm) !== 0) {
-    $_SESSION['signup_error'] = "$password do not match $passwordConfirm";
+    $_SESSION['signup_error'] = "passwords do not match";
     header('Location: signup.php');
 }
 
