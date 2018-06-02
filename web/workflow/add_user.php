@@ -28,20 +28,23 @@ function insertNewUser($firstName, $lastName, $username, $password, $db) {
     $stmt->bindValue(':timestamp', $timestamp, PDO::PARAM_INT);
     $date = new DateTime();
 
-    if (!$stmt->execute()) {
-        $_SESSION['signup_error'] = "Execute failed: (" . $stmt->errno . ") " . $stmt->error;
-        header('Location: signup.php');
-    }
+    $stmt->execute();
     $rowsChanged = $stmt->rowCount();
     $stmt->closeCursor();
     return $rowsChanged;
 }
 
-$rowsAffected = insertNewUser($firstName, $lastName, $username, $password, $db);
-if ($rowsAffected == 0) {
-    $_SESSION['signup_error'] = "Nothing was inserted";
+try {
+    $rowsAffected = insertNewUser($firstName, $lastName, $username, $password, $db);
+    if ($rowsAffected == 0) {
+        $_SESSION['signup_error'] = "Nothing was inserted";
+        header('Location: signup.php');
+    }
+    else
+        header('Location: login.php');
+}
+catch (PDOException $err) {
+    $_SESSION['signup_error'] = $err;
     header('Location: signup.php');
 }
-else
-    header('Location: login.php');
 ?>
