@@ -19,8 +19,8 @@ if(strcmp($password,$passwordConfirm) !== 0) {
 }
 
 function insertNewUser($firstName, $lastName, $username, $password, $db) {
-    $timestamp = date('Y-m-d G:i:s');
-    $stmt = $db->prepare("INSERT INTO \"user\" (first_name, last_name, username, password, date_joined) VALUES(:firstname, :lastname, :username, :password, $timestamp)");
+    //$timestamp = date('Y-m-d G:i:s');
+    $stmt = $db->prepare("INSERT INTO \"user\" (first_name, last_name, username, password, date_joined) VALUES(:firstname, :lastname, :username, :password, CURRENT_TIMESTAMP)");
     $stmt->bindValue(':firstname', $firstName, PDO::PARAM_STR);
     $stmt->bindValue(':lastname', $lastName, PDO::PARAM_STR);
     $stmt->bindValue(':username', $userame, PDO::PARAM_STR);
