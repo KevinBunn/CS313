@@ -21,5 +21,10 @@
         <input type="password" name="password-confirm">
         <input type="submit">
     </form>
+    <?php
+        if(isset($_SESSION['signup_error'])) {
+            echo "<p style=\"color: red\">" . $_SESSION['signup_error'] . "</p>";
+        }
+    ?>
 </body>
 </html>

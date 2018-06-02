@@ -15,7 +15,7 @@ $passwordConfirm = filter_input(INPUT_POST, 'password-confim', FILTER_SANITIZE_S
 
 if($passwordConfirm != $password) {
     $_SESSION['signup_error'] = "passwords do not match";
-    header('Location: login.php');
+    header('Location: signup.php');
 }
 
 function insertNewUser($firstName, $lastName, $username, $password) {
@@ -33,8 +33,8 @@ function insertNewUser($firstName, $lastName, $username, $password) {
 
 $rowsAffected = insertNewUser($firstName, $lastName, $username, $password);
 if ($rowsAffected == 0) {
-    $_SESSION['signup_error'] = "passwords do not match";
-    header('Location: login.php');
+    $_SESSION['signup_error'] = "Nothing was inserted";
+    header('Location: signup.php');
 }
 else
     header('Location: login.php');
