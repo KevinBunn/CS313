@@ -44,7 +44,7 @@ try {
         header('Location: login.php');
 }
 catch (PDOException $err) {
-    $_SESSION['signup_error'] = $err;
+    $_SESSION['signup_error'] = var_dump($err);
     header('Location: signup.php');
 }
 ?>
