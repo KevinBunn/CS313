@@ -40,10 +40,8 @@
 
     try {
         $adminId = getAdminId($db);
-        $_SESSION['dashboard_error'] = var_dump($admin_id);
-        header('Location: dashboard.php');
-        $rowsAffected = insertNewProject($adminId, $projectName, $db);
-        linkUserToProject ($adminId,$pdo->lastInsertId('project_id_seq'), $db);
+        $rowsAffected = insertNewProject($adminId["user_id"], $projectName, $db);
+        linkUserToProject ($adminId["user_id"],$pdo->lastInsertId('project_id_seq'), $db);
         if ($rowsAffected == 0) {
             $_SESSION['dashboard_error'] = "Nothing was inserted";
             header('Location: dashboard.php');
