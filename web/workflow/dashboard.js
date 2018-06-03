@@ -1,7 +1,7 @@
 var addProject = document.getElementById("add-project");
 addProject.addEventListener("click", function(event) {
    let newForm = document.createElement('form');
-    newForm.setAttribute("action", "<?php echo htmlspecialchars($_SERVER[\"PHP_SELF\"]);?>");
+    newForm.setAttribute("action", "add_project.php");
     newForm.setAttribute("method", "post");
     let newTextInput = document.createElement('input');
     newTextInput.setAttribute("type", "text");
