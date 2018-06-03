@@ -49,7 +49,7 @@
             header('Location: dashboard.php');
         }
         else
-            header('Location: project.php');
+            header('Location: project.php?project=' . $pdo->lastInsertId('project_id_seq'));
     }
     catch (PDOException $err) {
         $_SESSION['dashboard_error'] = $err->getMessage() . ' ' . $err->getCode();
