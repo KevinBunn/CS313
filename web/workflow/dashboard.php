@@ -14,6 +14,7 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="dashboard.js" defer></script>
   </head>
 <body>
   <div class="navbar">
