@@ -22,7 +22,7 @@
     function insertNewProject($adminId, $projectName, $db) {
         $timestamp = date('Y-m-d G:i:s');
         $stmt = $db->prepare("INSERT INTO project (admin_id, name, date_created, goal_end_date) VALUES(:admin_id, :project_name, :date_created, :goal_end_date)");
-        $stmt->bindValue(':admin_id', $admin_id, PDO::PARAM_INT);
+        $stmt->bindValue(':admin_id', $adminId, PDO::PARAM_INT);
         $stmt->bindValue(':project_name', $projectName, PDO::PARAM_STR);
         $stmt->bindValue(':date_created', $timestamp, PDO::PARAM_INT);
         $stmt->bindValue(':goal_end_date', $timestamp, PDO::PARAM_INT);
@@ -33,10 +33,10 @@
         return $rowsChanged;
     }
 
-    function linkUserToProject ($adminId, $project_id, $db) {
+    function linkUserToProject ($adminId, $projectId, $db) {
         $stmt = $db->prepare("INSERT INTO user_to_project (user_id, project_id) VALUES(:user_id,:project_id)");
-        $stmt->bindValues(':user_id', $admin_id, PDO::PARAM_INT);
-        $stmt->bindValues(':project_id', $project_id, PDO::PARAM_INT);
+        $stmt->bindValues(':user_id', $adminId, PDO::PARAM_INT);
+        $stmt->bindValues(':project_id', $projectId, PDO::PARAM_INT);
         $stmt->execute();
         $stmt->closeCursor();
     }
