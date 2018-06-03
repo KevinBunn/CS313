@@ -10,11 +10,11 @@
     $projectName = filter_input(INPUT_POST, 'project-name', FILTER_SANITIZE_STRING);
 
     function getAdminId($db) {
-        $stmt = $db->prepare("SELECT user_id FROM \"user\" WHERE username = :user");
+        $stmt = $db->prepare("SELECT user_id FROM \"user\" WHERE username = ':user'");
         $stmt->bindValue(':user', $_SESSION['user'], PDO::PARAM_STR);
         $stmt->execute();
         $rows = $stmt->fetchALL(PDO::FETCH_ASSOC);
-        $_SESSION['test'] = var_dump($rows);
+        $_SESSION['test'] = $rows;
         return $rows;
     }
 
