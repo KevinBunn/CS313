@@ -12,7 +12,7 @@ addProject.addEventListener("click", function(event) {
     let newSubmit = document.createElement('input');
     newSubmit.setAttribute("type","submit");
     newSubmit.setAttribute("value", "add");
-    //newForm.appendChild(newLabel);
+    newForm.appendChild(newLabel);
     newForm.appendChild(newTextInput);
     newForm.appendChild(newSubmit);
     event.target.parentElement.parentElement.appendChild(newForm);
