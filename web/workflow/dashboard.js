@@ -11,6 +11,6 @@ addProject.addEventListener("click", function(event) {
     newSubmit.setAttribute("value", "add");
     newForm.appendChild(newTextInput);
     newForm.appendChild(newSubmit);
-    event.target.removeChild(event.target.querySelector('a'));
-    event.target.appendChild(newForm);
+    event.target.parentElement.appendChild(newForm);
+    event.target.parentElement.removeChild(event.target.querySelector('a'));
 });
