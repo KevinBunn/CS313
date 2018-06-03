@@ -40,8 +40,8 @@
 
     try {
         $adminId = getAdminId($db);
-        $rowsAffected = insertNewProject($adminId["user_id"], $projectName, $db);
-        linkUserToProject ($adminId["user_id"],$pdo->lastInsertId('project_id_seq'), $db);
+        $rowsAffected = insertNewProject($adminId[0]["user_id"], $projectName, $db);
+        linkUserToProject ($adminId[0]["user_id"],$pdo->lastInsertId('project_id_seq'), $db);
         if ($rowsAffected == 0) {
             $_SESSION['dashboard_error'] = "Nothing was inserted";
             header('Location: dashboard.php');
@@ -50,7 +50,7 @@
             header('Location: project.php');
     }
     catch (PDOException $err) {
-        //$_SESSION['dashboard_error'] = $err->getMessage() . ' ' . $err->getCode();
+        $_SESSION['dashboard_error'] = $err->getMessage() . ' ' . $err->getCode();
         header('Location: dashboard.php');
     }
 
