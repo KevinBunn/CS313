@@ -50,7 +50,7 @@
             header('Location: project.php');
     }
     catch (PDOException $err) {
-        $_SESSION['dashboard_error'] = $err->getCode();
+        $_SESSION['dashboard_error'] = $err.getMessage() . ' ' . $err->getCode();
         header('Location: dashboard.php');
     }
 
