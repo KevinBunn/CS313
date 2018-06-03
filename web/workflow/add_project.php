@@ -13,7 +13,9 @@
         $stmt = $db->prepare("SELECT user_id FROM \"user\" WHERE username = :user");
         $stmt->bindValue(':user', $_SESSION['user'], PDO::PARAM_STR);
         $stmt->execute();
-        return $stmt->fetchALL(PDO::FETCH_ASSOC);
+        $rows = $stmt->fetchALL(PDO::FETCH_ASSOC);
+        $_SESSION['test'] = var_dump($rows);
+        return $rows;
     }
 
     function insertNewProject($adminId, $projectName, $db) {

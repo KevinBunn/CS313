@@ -49,6 +49,9 @@
         if (isset($_SESSION['dashboard_error'])) {
             echo "<p>" . $_SESSION['dashboard_error'] . "</p>";
         }
+                if (isset($_SESSION['test'])) {
+            echo "<p>" . $_SESSION['test'] . "</p>";
+        }
     ?>
 </body>
 </html>
