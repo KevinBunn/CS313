@@ -45,7 +45,7 @@ try {
 }
 catch (PDOException $err) {
     if ((int)$err->getCode() == 23505) {
-        $_SESSION['signup_error'] = "username is already taken";
+        $_SESSION['signup_error'] = "Username is already taken";
         header('Location: signup.php');
     }
     else {

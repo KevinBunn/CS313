@@ -12,6 +12,12 @@ body {
 .content{
   
 }
+#add-project.hover {
+    background-color: wheat;
+}
+#add-project {
+    text-align: center;
+}
 .category {
   background-color: antiquewhite;
   width: 285px;
