@@ -9,7 +9,7 @@
 
     $projectName = filter_input(INPUT_POST, 'project-name', FILTER_SANITIZE_STRING);
 
-    function getAdminId() {
+    function getAdminId($db) {
         $stmt = $db->prepare("SELECT user_id FROM \"user\" WHERE username = :user");
         $stmt->bindValue(':user', $_SESSION['user'], PDO::PARAM_STR);
         $stmt->execute();
@@ -30,7 +30,7 @@
         return $rowsChanged;
     }
 
-    function linkUserToProject ($adminId, $project_id) {
+    function linkUserToProject ($adminId, $project_id, $db) {
         $stmt = $db->prepare("INSERT INTO user_to_project (user_id, project_id) VALUES(:user_id,:project_id)");
         $stmt->bindValues(':user_id', $admin_id, PDO::PARAM_INT);
         $stmt->bindValues(':project_id', $project_id, PDO::PARAM_INT);
@@ -39,9 +39,9 @@
     }
 
     try {
-        $adminId = getAdminId();
+        $adminId = getAdminId($db);
         $rowsAffected = insertNewProject($adminId, $projectName, $db);
-        linkUserToProject ($adminId,$pdo->lastInsertId('project_id_seq'));
+        linkUserToProject ($adminId,$pdo->lastInsertId('project_id_seq'), $db);
         if ($rowsAffected == 0) {
             $_SESSION['dashboard_error'] = "Nothing was inserted";
             header('Location: dashboard.php');
