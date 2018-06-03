@@ -45,5 +45,10 @@
     
   ?>
     </div>
+    <?php
+        if (isset($_SESSION['dashboard_error']) {
+            echo "<p>" . $_SESSION['dashboard_error'] . "</p>";
+        }
+    ?>
 </body>
 </html>
