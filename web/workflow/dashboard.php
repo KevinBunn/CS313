@@ -9,6 +9,10 @@
     if (!isset($db)) {
 	   die("DB Connection was not set");
     }
+
+    if (isset($_POST["project-name"])) {
+        header('Location: add_project.php');
+    }
 ?>
 
 <html>
