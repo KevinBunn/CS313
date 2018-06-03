@@ -35,8 +35,8 @@
 
     function linkUserToProject ($adminId, $projectId, $db) {
         $stmt = $db->prepare("INSERT INTO user_to_project (user_id, project_id) VALUES(:user_id,:project_id)");
-        $stmt->bindValues(':user_id', $adminId, PDO::PARAM_INT);
-        $stmt->bindValues(':project_id', $projectId, PDO::PARAM_INT);
+        $stmt->bindValue(':user_id', $adminId, PDO::PARAM_INT);
+        $stmt->bindValue(':project_id', $projectId, PDO::PARAM_INT);
         $stmt->execute();
         $stmt->closeCursor();
     }
