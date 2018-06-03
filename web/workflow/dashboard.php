@@ -50,7 +50,7 @@
             echo "<p>" . $_SESSION['dashboard_error'] . "</p>";
         }
                 if (isset($_SESSION['test'])) {
-            var_dump($_SESSION['test']);
+            echo $_SESSION['test'];
         }
     ?>
 </body>
