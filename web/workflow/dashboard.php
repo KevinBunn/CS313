@@ -37,7 +37,7 @@
       echo '<div class="category"><a href="project.php?project=' . $project["project_id"] . '">' . $project["name"] . '</a></div>';
     }
     
-    echo '<div id="add-project" class="category"><a class="add-project-link" href="#">create new project...</a></div>';
+    echo '<div class="category"><a id="add-project" class="add-project-link" href="#"><span>create new project...</span></a></div>';
     
   ?>
     </div>
