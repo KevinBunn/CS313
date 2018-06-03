@@ -12,5 +12,5 @@ addProject.addEventListener("click", function(event) {
     newForm.appendChild(newTextInput);
     newForm.appendChild(newSubmit);
     event.target.parentElement.appendChild(newForm);
-    event.target.parentNode.removeChild(event.target.querySelector('a'));
+    event.target.parentElement.removeChild(event.target.querySelector('#add-project'));
 });
