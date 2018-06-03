@@ -15,8 +15,7 @@
         //$stmt->bindValue(':user', $_SESSION['user'], PDO::PARAM_STR);
         $stmt->execute();
         $rows = $stmt->fetchALL(PDO::FETCH_ASSOC);
-        $_SESSION['test'] = $rows;
-        return $rows;
+        return $rows[0]["user_id"];
     }
 
     function insertNewProject($adminId, $projectName, $db) {
@@ -43,8 +42,8 @@
 
     try {
         $adminId = getAdminId($db);
-        $rowsAffected = insertNewProject($adminId[0]["user_id"], $projectName, $db);
-        linkUserToProject ($adminId[0]["user_id"],$pdo->lastInsertId('project_id_seq'), $db);
+        $rowsAffected = insertNewProject($adminId, $projectName, $db);
+        linkUserToProject ($adminId,$pdo->lastInsertId('project_id_seq'), $db);
         if ($rowsAffected == 0) {
             $_SESSION['dashboard_error'] = "Nothing was inserted";
             header('Location: dashboard.php');
