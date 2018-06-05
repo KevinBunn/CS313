@@ -19,7 +19,7 @@
         return $rows[0]["user_id"];
     }
 
-    function insertNewProject($adminId, $projectName, $db) {
+    function insertNewProject($adminId, $projectName, $db, $newProjectId) {
         $timestamp = date('Y-m-d G:i:s');
         $stmt = $db->prepare("INSERT INTO project (admin_id, name, date_created, goal_end_date) VALUES(:admin_id, :project_name, :date_created, :goal_end_date)");
         $stmt->bindValue(':admin_id', $adminId, PDO::PARAM_INT);
@@ -28,6 +28,8 @@
         $stmt->bindValue(':goal_end_date', $timestamp, PDO::PARAM_INT);
         
         $stmt->execute();
+
+        $lastInsertId = $db->lastInsertId("project_project_id_seq");
         $rowsChanged = $stmt->rowCount();
         $stmt->closeCursor();
         return $rowsChanged;
@@ -43,14 +45,16 @@
 
     try {
         $adminId = getAdminId($db);
-        $rowsAffected = insertNewProject($adminId, $projectName, $db);
-        if ($rowsAffected == 0) {
+        $newProjectId = 0;
+        $rowsAffected = insertNewProject($adminId, $projectName, $db, $newProjectId);
+        if ($rowsAffected == 0 || $newProjectId == 0) {
             $_SESSION['dashboard_error'] = "Nothing was inserted";
             header('Location: dashboard.php');
         }
         else
             header('Location: project.php?project=' . $pdo->lastInsertId('project_id_seq'));
-        linkUserToProject ($adminId, $db->insert_id, $db);
+        linkUserToProject ($adminId, $newProjectId, $db);
+
     }
     catch (PDOException $err) {
         $_SESSION['dashboard_error'] = $err->getMessage() . ' ' . $err->getCode();
