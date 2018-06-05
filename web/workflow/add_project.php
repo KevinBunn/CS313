@@ -44,13 +44,13 @@
     try {
         $adminId = getAdminId($db);
         $rowsAffected = insertNewProject($adminId, $projectName, $db);
-        linkUserToProject ($adminId, $db->lastInsertId('project_project_id_seq'), $db);
         if ($rowsAffected == 0) {
             $_SESSION['dashboard_error'] = "Nothing was inserted";
             header('Location: dashboard.php');
         }
         else
             header('Location: project.php?project=' . $pdo->lastInsertId('project_id_seq'));
+        linkUserToProject ($adminId, $db->insert_id, $db);
     }
     catch (PDOException $err) {
         $_SESSION['dashboard_error'] = $err->getMessage() . ' ' . $err->getCode();
