@@ -18,6 +18,8 @@ if(strcmp($password,$passwordConfirm) !== 0) {
     header('Location: signup.php');
 }
 
+$hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+
 function insertNewUser($firstName, $lastName, $username, $password, $db) {
     $timestamp = date('Y-m-d G:i:s');
     $stmt = $db->prepare("INSERT INTO \"user\" (first_name, last_name, username, password, date_joined) VALUES(:firstname, :lastname, :username, :password, :timestamp)");
@@ -35,7 +37,7 @@ function insertNewUser($firstName, $lastName, $username, $password, $db) {
 }
 
 try {
-    $rowsAffected = insertNewUser($firstName, $lastName, $username, $password, $db);
+    $rowsAffected = insertNewUser($firstName, $lastName, $username, $hashedPassword, $db);
     if ($rowsAffected == 0) {
         $_SESSION['signup_error'] = "Nothing was inserted";
         header('Location: signup.php');

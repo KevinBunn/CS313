@@ -20,15 +20,15 @@
     </form>
     <?php  
 
-    $stmt = $db->prepare('SELECT username, password FROM "user";');
+    $username = $_POST["username"];
+    $stmt = $db->prepare('SELECT username, password FROM "user" WHERE username = :username');
+    $stmt->bindValue(':username', $username, PDO::PARAM_STR);
     $stmt->execute();
     $rows = $stmt->fetchALL(PDO::FETCH_ASSOC);
   
     if (isset($_POST["username"]) && isset($_POST["password"])) {
       $successful_login = FALSE;
-      var_dump($rows);
-      foreach ($rows as $row) {
-        if ($row["username"] == $_POST["username"] && $row["password"] == $_POST["password"])
+      if ($rows[0]["username"] == $_POST["username"] && password_verify($rows[0]["password"] == $_POST["password"]));
           $successful_login = TRUE;
       }
       if($successful_login){

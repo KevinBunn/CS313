@@ -1,0 +1,5 @@
+CREATE TABLE user_two (
+	id			SERIAL,
+	name		VARCHAR(45)		NOT NULL	UNIQUE,
+	password	VARCHAR(225)	NOT NULL
+);
