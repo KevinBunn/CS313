@@ -29,7 +29,7 @@
         
         $stmt->execute();
 
-        $lastInsertId = $db->lastInsertId("project_project_id_seq");
+        $newProjectId = $db->lastInsertId("project_project_id_seq");
         $rowsChanged = $stmt->rowCount();
         $stmt->closeCursor();
         return $rowsChanged;
