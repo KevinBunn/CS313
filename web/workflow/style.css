@@ -3,6 +3,7 @@ html {
 }
 body {
   background-color: #D8F3FD;
+  margin: 0px;
 }
 .navbar {
   background-color: #FFFFFF;
@@ -17,6 +18,7 @@ body {
     text-align: center;
 }
 .category {
+  padding: 5px;
   background-color: #00ADED;
   width: 285px;
   height: 100px;
