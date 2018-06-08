@@ -15,7 +15,7 @@
         //$stmt->bindValue(':user', $_SESSION['user'], PDO::PARAM_STR);
         $stmt->execute();
         $rows = $stmt->fetchALL(PDO::FETCH_ASSOC);
-        $_SESSION['test'] = $rows[0]["user_id"];
+//        $_SESSION['test'] = $rows[0]["user_id"];
         return $rows[0]["user_id"];
     }
 
@@ -30,6 +30,7 @@
         $stmt->execute();
 
         $newProjectId = $db->lastInsertId("project_project_id_seq");
+        $_SESSION['test'] = $db->lastInsertId("project_project_id_seq");
         $rowsChanged = $stmt->rowCount();
         $stmt->closeCursor();
         return $rowsChanged;
