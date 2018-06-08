@@ -19,7 +19,7 @@
         return $rows[0]["user_id"];
     }
 
-    function insertNewProject($adminId, $projectName, $db, $newProjectId) {
+    function insertNewProject($adminId, $projectName, $db, &$newProjectId) {
         $timestamp = date('Y-m-d G:i:s');
         $stmt = $db->prepare("INSERT INTO project (admin_id, name, date_created, goal_end_date) VALUES(:admin_id, :project_name, :date_created, :goal_end_date)");
         $stmt->bindValue(':admin_id', $adminId, PDO::PARAM_INT);
