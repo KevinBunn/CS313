@@ -54,7 +54,7 @@
             header('Location: dashboard.php');
         }
         else
-            header('Location: project.php?project=' . $pdo->lastInsertId('project_id_seq'));
+            header('Location: project.php?project=');
         linkUserToProject ($adminId, $newProjectId, $db);
 
     }
