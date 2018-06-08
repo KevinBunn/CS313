@@ -53,9 +53,8 @@
             $_SESSION['dashboard_error'] = "Nothing was inserted";
             header('Location: dashboard.php');
         }
-        else
-            header('Location: project.php?project=');
         linkUserToProject ($adminId, $newProjectId, $db);
+        header('Location: project.php?project=' . $newProjectId);
 
     }
     catch (PDOException $err) {
