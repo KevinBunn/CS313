@@ -19,8 +19,9 @@ body {
 .category {
   background-color: #00ADED;
   width: 285px;
+  height: 200px;
   margin-left: 5%;
-  border: 3px solid black;
+  border: 1px solid black;
   height: max-content;
 }
 .category-title {
