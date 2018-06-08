@@ -30,7 +30,7 @@
         $stmt->execute();
 
         $newProjectId = $db->lastInsertId("project_project_id_seq");
-        $_SESSION['test'] = $db->lastInsertId("project_project_id_seq");
+        
         $rowsChanged = $stmt->rowCount();
         $stmt->closeCursor();
         return $rowsChanged;
@@ -48,6 +48,7 @@
         $adminId = getAdminId($db);
         $newProjectId = 0;
         $rowsAffected = insertNewProject($adminId, $projectName, $db, $newProjectId);
+        $_SESSION['test'] = $newProjectId;
         if ($rowsAffected == 0 || $newProjectId == 0) {
             $_SESSION['dashboard_error'] = "Nothing was inserted";
             header('Location: dashboard.php');
