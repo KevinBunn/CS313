@@ -5,9 +5,7 @@ body {
   background-color: #D8F3FD;
 }
 .navbar {
-  border-bottom: 1px solid;
-  border-bottom-color: aliceblue;
-  background-color: #E3E3E3;
+  background-color: #FFFFFF;
 }
 .content{
   
@@ -22,7 +20,7 @@ body {
   background-color: #00ADED;
   width: 285px;
   margin-left: 5%;
-  border: 3px solid burlywood;
+  border: 3px solid black;
   height: max-content;
 }
 .category-title {
