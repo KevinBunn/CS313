@@ -2,12 +2,12 @@ html {
   height: 100%;
 }
 body {
-  background-color: lightcoral;
+  background-color: #D8F3FD;
 }
 .navbar {
   border-bottom: 1px solid;
   border-bottom-color: aliceblue;
-  background-color: azure;
+  background-color: #E3E3E3;
 }
 .content{
   
@@ -19,7 +19,7 @@ body {
     text-align: center;
 }
 .category {
-  background-color: antiquewhite;
+  background-color: #00ADED;
   width: 285px;
   margin-left: 5%;
   border: 3px solid burlywood;
@@ -44,6 +44,7 @@ body {
   padding-right: 10px;
 }
 .task {
+/*  background-color: #E3E3E3*/
   padding-top: 10px;
   padding-bottom: 10px;
   border-top: 1px solid burlywood;
