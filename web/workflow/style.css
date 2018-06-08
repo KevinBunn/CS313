@@ -22,7 +22,6 @@ body {
   height: 200px;
   margin-left: 5%;
   border: 1px solid black;
-  height: max-content;
 }
 .category-title {
   border-bottom: 1px solid burlywood;
