@@ -71,7 +71,6 @@ body {
   border: 1px solid black;
   border-radius: 5px;
   margin: 10px;
-  padding: 10px;
 }
 .task-content {
   width: 100%;
@@ -79,6 +78,7 @@ body {
   table-layout: fixed;
 }
 .task-field {
+  padding: 10px;
   display: table-cell;
 }
 #logout-button {

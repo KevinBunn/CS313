@@ -24,13 +24,13 @@ for (statusField of statusFields) {
   let status = statusField.innerHTML;
   switch (status) {
     case "Open":
-        statusField.backgroundColor = "#FF6E00";
+        statusField.style.backgroundColor = "#FF6E00";
         break;
     case "Test":
-        statusField.backgroundColor = "#F8D801";
+        statusField.style.backgroundColor = "#F8D801";
         break;
     case "Complete":
-        statusField.backgroundColor = "#45E629";
+        statusField.style.backgroundColor = "#45E629";
         break;
     default:
         console.log("you're all noobs");
