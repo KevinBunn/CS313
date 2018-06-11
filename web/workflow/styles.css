@@ -81,6 +81,15 @@ body {
   padding: 10px;
   display: table-cell;
 }
+.task-status {
+  text-align: center;
+}
+.task-priority {
+  text-align: center;
+}
+.task-severity {
+  text-align: center;
+}
 #logout-button {
   text-align: right;
   margin-top: 55px;
