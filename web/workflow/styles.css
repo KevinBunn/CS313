@@ -24,6 +24,7 @@ body {
 .category-title {
   font-size: 24;
   text-align: left;
+  margin-bottom: 30px;
 }
 .category {
   margin-top: 38px;
@@ -60,6 +61,7 @@ body {
   background-color: #E3E3E3;
   border: 1px solid black;
   border-radius: 10px;
+  box-shadow: inset 0px -11px 8px -10px #CCC;
   padding-left: 10px;
   padding-right: 10px;
 }
