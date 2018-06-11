@@ -31,8 +31,9 @@ body {
   border: 1px solid black;
   border-radius: 10px;
 }
-.category-row {
+.category-column {
     margin-left: 5%;
+    margin-right: 5%;
     margin-top: 38px;
 }
 .project {

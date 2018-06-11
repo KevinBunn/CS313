@@ -42,9 +42,9 @@
             }
             $tasks = $task_stmt->fetchALL(PDO::FETCH_ASSOC);
             if (count($tasks) > 0) {
-                echo '<div class="task-column">';
+                echo '<div class="task-content">';
                 foreach ($tasks as $task) {
-                    echo '<div class="task"><input class="task-checkbox" type="checkbox">' . $task["name"] . '</div>';
+                    echo '<div class="task">' . $task["name"] . '</div>';
                 }
                 echo "</div>";
             }
