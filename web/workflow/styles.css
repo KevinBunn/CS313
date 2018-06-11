@@ -77,7 +77,7 @@ body {
   display: table;
   table-layout: fixed;
 }
-.task-field {
+.task-cell {
   padding: 10px;
   display: table-cell;
 }
