@@ -19,6 +19,7 @@
   <head>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script type="text/javascript" src="dashboard.js" defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
   </head>
 <body>
   <div class="navbar">
