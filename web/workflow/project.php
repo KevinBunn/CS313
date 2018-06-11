@@ -8,6 +8,8 @@
     if (!isset($db)) {
         die("DB Connection was not set");
     }
+
+    $project_id = $_GET['project'];
 ?>
 <!DOCTYPE>
 <html>
@@ -20,6 +22,15 @@
         <div id="logout-button"><a href="logout.php">logout</a></div>
     </div>
     <div class="content">
+      <?php 
+        $projectQuery = "SELECT name FROM project WHERE project_id = $project_id";
+        $stmt = $db->prepare($projectQuery);
+        $stmt->execute();
+        $name = $stmt->fetchALL(PDO::FETCH_ASSOC);
+        
+        echo '<h1>' . $name[0]["name"] . '</h1>'
+        
+      ?>
       <div class="category-column">
         <?php 
         $project_id = $_GET['project'];
