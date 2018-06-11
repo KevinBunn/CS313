@@ -20,7 +20,7 @@
         <div id="logout-button"><a href="logout.php">logout</a></div>
     </div>
     <div class="content">
-      <div class="category-row">
+      <div class="category-column">
         <?php 
         $project_id = $_GET['project'];
 
