@@ -61,7 +61,7 @@ body {
   background-color: #E3E3E3;
   border: 1px solid black;
   border-radius: 10px;
-  box-shadow: inset 0px -11px 8px -10px #CCC;
+  box-shadow: inset 0px 11px 4px -10px;
   padding-left: 10px;
   padding-right: 10px;
 }
