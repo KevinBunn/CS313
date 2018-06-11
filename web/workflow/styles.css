@@ -74,7 +74,11 @@ body {
   padding: 10px;
 }
 .task-content {
-  display: flex;
+  display: table;
+  table-layout: fixed;
+}
+.task-field {
+  display: table-cell;
 }
 #logout-button {
   text-align: right;
