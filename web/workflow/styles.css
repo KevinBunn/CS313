@@ -36,6 +36,9 @@ body {
     margin-right: 5%;
     margin-top: 38px;
 }
+#project-page-title {
+    margin-left: 30px;
+}
 .project {
   padding: 5px;
   background-color: #00ADED;

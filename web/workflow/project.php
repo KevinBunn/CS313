@@ -28,7 +28,7 @@
         $stmt->execute();
         $name = $stmt->fetchALL(PDO::FETCH_ASSOC);
         
-        echo '<h1>' . $name[0]["name"] . '</h1>'
+        echo '<h1 id="project-page-title">' . $name[0]["name"] . '</h1>';
         
       ?>
       <div class="category-column">
