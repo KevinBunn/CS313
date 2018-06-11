@@ -26,7 +26,6 @@
         <?php echo $_SESSION['user']; ?>
     </h1>
     <div id="logout-button"><a href="logout.php">logout</a></div>
-      <p>as;lkjdsf;lkasjdf;lkajsdf</p>
     </div>
     <div class="project-row">
   <?php 
