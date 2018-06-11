@@ -9,9 +9,11 @@ body {
   background-color: #FFFFFF;
   display: flex;
 }
+/*
 .content {
   
 }
+*/
 #add-project.hover {
     background-color: wheat;
 }
