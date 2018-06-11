@@ -74,6 +74,7 @@ body {
   padding: 10px;
 }
 .task-content {
+  width: 100%;
   display: table;
   table-layout: fixed;
 }
