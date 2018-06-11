@@ -15,6 +15,7 @@
 <html>
     <head>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <script type="text/javascript" src="projectView.js" defer></script>
     </head>
 <body>
     <div class="navbar">
@@ -53,9 +54,9 @@
             }
             $tasks = $task_stmt->fetchALL(PDO::FETCH_ASSOC);
             if (count($tasks) > 0) {
-                echo '<div class="task-content">';
+                echo '<div class="category-content">';
                 foreach ($tasks as $task) {
-                    echo '<div class="task">' . $task["name"] . '</div>';
+                    echo '<div class="task"><div class="task-content"><div class="task-name">' . $task["name"] . '<div class="task-status">' .  $task["status"] . '</div></div></div></div>';
                 }
                 echo "</div>";
             }
