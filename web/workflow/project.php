@@ -55,7 +55,7 @@
             }
             $tasks = $task_stmt->fetchALL(PDO::FETCH_ASSOC);
             if (count($tasks) > 0) {
-                echo '<div class="task-header-row"><div class="task-column-header">Name</div><div class="task-column-header">Status</div><div class="task-column-header">Priority</div><div class="task-column-header">Severity</div></div>';
+                echo '<div class="task-header-content"><div class="task-header-row"><div class="task-column-header">Name</div><div class="task-column-header">Status</div><div class="task-column-header">Priority</div><div class="task-column-header">Severity</div></div></div>';
                 echo '<div class="category-content">';
                 foreach ($tasks as $task) {
                     echo '<div class="task"><div class="task-content"><div class="task-cell task-name">' . $task["name"] . '</div><div class="task-cell task-status">' .  $task["status"] . '</div><div class="task-cell task-priority">' . $task["priority"] . '</div><div style="border-right: 0px" class="task-cell task-severity">' . $task["severity"] . '</div></div></div>';
