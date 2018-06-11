@@ -66,6 +66,9 @@ body {
   padding-right: 10px;
 }
 .task {
+  background-color: #FFFFFF;
+  border: 1px solid black;
+  border-radius: 5px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
