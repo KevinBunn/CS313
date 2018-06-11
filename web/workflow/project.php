@@ -56,7 +56,7 @@
             if (count($tasks) > 0) {
                 echo '<div class="category-content">';
                 foreach ($tasks as $task) {
-                    echo '<div class="task"><div class="task-content"><div class="task-name">' . $task["name"] . '<div class="task-status">' .  $task["status"] . '</div></div></div></div>';
+                    echo '<div class="task"><div class="task-content"><div class="task-name">' . $task["name"] . '</div><div class="task-status">' .  $task["status"] . '</div></div></div>';
                 }
                 echo "</div>";
             }
