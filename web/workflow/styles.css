@@ -80,6 +80,7 @@ body {
 .task-cell {
   padding: 10px;
   display: table-cell;
+  border-right: 1px solid black;
 }
 .task-status {
   text-align: center;
