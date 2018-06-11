@@ -48,7 +48,6 @@
         $adminId = getAdminId($db);
         $newProjectId = 0;
         $rowsAffected = insertNewProject($adminId, $projectName, $db, $newProjectId);
-        $_SESSION['test'] = $newProjectId;
         if ($rowsAffected == 0 || $newProjectId == 0) {
             $_SESSION['dashboard_error'] = "Nothing was inserted";
             header('Location: dashboard.php');

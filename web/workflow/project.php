@@ -62,6 +62,8 @@
             echo "</div>";
         }
         
+        echo '<div class="category"><a id="add-category" class="category-title" href="#"><span>Add New Category...</span></a></div>';
+        
         ?>
       </div>
     </div>
