@@ -17,7 +17,7 @@
 
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <script type="text/javascript" src="dashboard.js" defer></script>
   </head>
 <body>
