@@ -66,6 +66,14 @@ body {
   margin-right: 10px;
   margin-bottom: 10px;
 }
+.task-header-row {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.task-column-header {
+  display: table-cell;
+  text-align: center;
+}
 .task {
   background-color: #FFFFFF;
   border: 1px solid black;
