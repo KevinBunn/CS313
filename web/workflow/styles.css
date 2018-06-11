@@ -22,7 +22,6 @@ body {
 }
 
 .category-title {
-/*  border-bottom: 1px solid burlywood;*/
   font-size: 24;
   text-align: left;
 }
@@ -52,18 +51,14 @@ body {
   flex-flow: row;
   margin-top: 38px;
 }
-.task-checkbox {
-  padding-right: 10px;
-}
-.task-column {
+.task-content {
+  background-color: #E3E3E3
   padding-left: 10px;
   padding-right: 10px;
 }
 .task {
-/*  background-color: #E3E3E3*/
   padding-top: 10px;
   padding-bottom: 10px;
-  border-top: 1px solid burlywood;
 }
 #logout-button {
   text-align: right;
