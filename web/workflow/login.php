@@ -6,18 +6,20 @@
 	   die("DB Connection was not set");
     }
 ?>
-
+<!DOCTYPE>
 <html>
     <head>
-        
+        <link rel="stylesheet" type="text/css" href="styles.css">
     </head>
-<body>
-    <h1>Login</h1>
+<body id="body">
+  <div class="login-container">
+    <h1 id="login-title">Login</h1>
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
         Username: <input type="text" name="username" value="KyleRocks"><br>
         Password: <input type="password" name="password" value="P@ssw0rd1">
         <input type="submit">
     </form>
+  </div>
     <?php  
 
     $username = $_POST["username"];

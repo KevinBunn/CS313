@@ -25,6 +25,14 @@ html {
   font-size: 24;
   color: black;
 }
+#login-title {
+  text-align: center;
+  font-size: 40;
+}
+.login-container {
+  margin-top: 25%;
+  margin-left: 50%;
+}
 .project-title-link {
   color: black;
 }
