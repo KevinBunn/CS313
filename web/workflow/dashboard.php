@@ -1,7 +1,10 @@
 <?php 
     session_start();
-    if(isset($_SESSION['user']) === FALSE || $_SESSION['user'] == "") {
+    if(isset($_SESSION['user']) === FALSE) {
        header('Location: login.php');
+    }
+    else if ($_SESSION['user'] == "") {
+      header('Location: logout.php');
     }
 
     require("dbConnect.php");
