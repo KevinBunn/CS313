@@ -20,10 +20,14 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
     </head>
 <body>
-    <div class="navbar">
-        <div>Navbar</div>
-        <div id="logout-button"><a href="logout.php">logout</a></div>
-    </div>
+<nav class="navbar navbar-light bg-light justify-content-between">
+  <a class="navbar-brand" href="dashboard.php">Back To Dashboard</a>
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+      <a type="btn-sm" class="nav-link" href="logout.php">Logout</a>
+    </li>
+  </ul>
+</nav>
     <div class="content">
       <?php 
         $projectQuery = "SELECT name FROM project WHERE project_id = $project_id";
