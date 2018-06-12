@@ -49,7 +49,7 @@
     foreach ($projects as $project) {
       echo '<div data-project-id="' . $project["project_id"] . '" class="project"><div class="project-top"><a class="project-title-link" href="project.php?project=' . $project["project_id"] . '">' . $project["name"] . '</a>
       <div class="dropdown">  
-      <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <button class="btn btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       ...
       </button><div class="dropdown-menu"><a class="dropdown-item" href="delete_category.php?project=' . $project["project_id"] . '"></a></div></div>
       </div></div>';
