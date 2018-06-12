@@ -48,7 +48,7 @@
     
     foreach ($projects as $project) {
       echo '<div data-project-id="' . $project["project_id"] . '" class="project"><div class="project-top"><a class="project-title-link" href="project.php?project=' . $project["project_id"] . '">' . $project["name"] . '</a>
-      <a href="delete_category.php?project=' . $project["project_id"] . '">X</a>
+      <a href="delete_project.php?project=' . $project["project_id"] . '">X</a>
       </div></div>';
     }
     
