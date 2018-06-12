@@ -47,7 +47,7 @@
     //var_dump($projects);
     
     foreach ($projects as $project) {
-      echo '<div class="project"><a class="project-title-link" href="project.php?project=' . $project["project_id"] . '">' . $project["name"] . '</a></div>';
+      echo '<div data-project-id="' . $project["project_id"] . '" class="project"><a class="project-title-link" href="project.php?project=' . $project["project_id"] . '">' . $project["name"] . '</a></div>';
     }
     
     echo '<div class="project"><a id="add-project" class="add-project-link" href="#"><span>create new project...</span></a></div>';
