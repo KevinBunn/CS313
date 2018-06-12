@@ -9,8 +9,7 @@
 
     $projectId = $_GET['project'];
 
-    $getCategotyQuery = "SELECT category_id FROM category WHERE project_id = :project_id";
-    $getCategoriesStmt = $db->prepare($getCategoryQuery);
+    $getCategoriesStmt = $db->prepare("SELECT category_id FROM category WHERE project_id = :project_id");
     $getCategoriesStmt->bindValue(':project_id', $projectId, PDO::PARAM_INT);
     $categories = $getCategoriesStmt->execute();
 
