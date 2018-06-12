@@ -78,6 +78,10 @@ html {
   margin-left: 25%;
   margin-right: 25%;
 }
+.project-top {
+  justify-content: space-around;
+  display: flex;
+}
 .project-title-link {
   color: black;
 }
