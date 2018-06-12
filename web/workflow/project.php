@@ -56,7 +56,7 @@
         
         foreach($categories as $category) {
             $category_id = $category["category_id"];
-            echo '<div class="category"><div class="category-top"><div class="category-title">' . $category["name"] . '<a href="delete_category?project=' . $project_id . '&category=' . $category_id . '">X</a></div></div>';
+            echo '<div class="category"><div class="category-top"><div class="category-title">' . $category["name"] . '<a href="delete_category.php?project=' . $project_id . '&category=' . $category_id . '">X</a></div></div>';
             
             
             $task_query = "SELECT * FROM task WHERE category_id = $category_id";
