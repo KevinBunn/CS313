@@ -25,19 +25,14 @@
 <body>
   
   <nav class="navbar navbar-light bg-light justify-content-between">
-  <a class="navbar-brand" href="#">dashboard for
-        <?php echo $_SESSION['user']; ?></a>
+  <a class="navbar-brand" href="#">Dashboard for
+    <?php echo $_SESSION['user']; ?></a>
   <ul class="navbar-nav ml-auto">
     <li class="nav-item">
       <a type="btn btn-sm" class="nav-link" href="logout.php">Logout</a>
     </li>
   </ul>
 </nav>
-  <div class="navbar">
-    <h1>
-    </h1>
-    <div id="logout-button"><a href="logout.php">logout</a></div>
-    </div>
     <div class="project-row">
   <?php 
     $current_username = $_SESSION['user'];
