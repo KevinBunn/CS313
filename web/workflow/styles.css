@@ -15,12 +15,19 @@ html {
 }
 */
 #add-project.hover {
-    background-color: wheat;
+  background-color: wheat;
 }
 #add-project {
-    text-align: center;
+  text-align: center;
+  color: black;
 }
-
+#add-category {
+  font-size: 24;
+  color: black;
+}
+.project-title-link {
+  color: black;
+}
 .category-title {
   font-size: 24;
   text-align: left;
@@ -99,9 +106,4 @@ html {
 }
 .task-severity {
   text-align: center;
-}
-#logout-button {
-  text-align: right;
-  margin-top: 55px;
-  margin-left: 65%;
 }
