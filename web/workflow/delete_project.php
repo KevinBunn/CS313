@@ -25,13 +25,13 @@
     $deleteCategoryStmt->bindValue(':project_id', $projectId, PDO::PARAM_INT);
     $deleteCategoryStmt->execute();
 
-    $deleteProjectStmt = $db->prepare("DELETE FROM project WHERE project_id = :project_id");
-    $deleteProjectStmt->bindValue(':project_id', $projectId, PDO::PARAM_INT);
-    $deleteProjectStmt->execute();
-
     $deleteUserToProjectStmt = $db->prepare("DELETE FROM user_to_project WHERE project_id = :project_id");
     $deleteUserToProjectStmt->bindValue(':project_id', $projectId, PDO::PARAM_INT);
     $deleteUserToProjectStmt->execute();
+
+    $deleteProjectStmt = $db->prepare("DELETE FROM project WHERE project_id = :project_id");
+    $deleteProjectStmt->bindValue(':project_id', $projectId, PDO::PARAM_INT);
+    $deleteProjectStmt->execute();
 
     header('Location: dashboard.php');
   
