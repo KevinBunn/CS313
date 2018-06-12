@@ -16,7 +16,7 @@
     <h1 id="login-title">Login</h1>
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
         <input class="custom-input" type="text" name="username"  placeholder="username"><br>
-        <input class="custom-input" type="password" name="password" placeholder="password">
+        <input class="custom-input" type="password" name="password" placeholder="password"><br>
         <input type="submit">
     </form>
 

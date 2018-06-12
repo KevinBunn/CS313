@@ -15,6 +15,7 @@ html {
 }
 */
 .custom-input {
+  height: 25px;
   background-color: #FFFFFF;
   border: 1px solid black;
   border-radius: 5px;
