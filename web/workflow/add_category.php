@@ -26,7 +26,7 @@
       $rowsAffected = insertNewCategory($categoryName, $db, $projectId);
       if ($rowsAffected == 0) {
           $_SESSION['category_error'] = "Nothing was inserted";
-          header('Location: dashboard.php');
+          header('Location: project.php?project=' . $projectId);
       }
       header('Location: project.php?project=' . $projectId);
 
