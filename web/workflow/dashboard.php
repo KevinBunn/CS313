@@ -47,7 +47,12 @@
     //var_dump($projects);
     
     foreach ($projects as $project) {
-      echo '<div data-project-id="' . $project["project_id"] . '" class="project"><a class="project-title-link" href="project.php?project=' . $project["project_id"] . '">' . $project["name"] . '</a></div>';
+      echo '<div data-project-id="' . $project["project_id"] . '" class="project"><div class="project-top"><a class="project-title-link" href="project.php?project=' . $project["project_id"] . '">' . $project["name"] . '</a>
+      <div class="dropdown">  
+      <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      ...
+      </button><div class="dropdown-menu"><a class="dropdown-item" href="delete_category.php?project=' . $project["project_id"] . '"></a></div></div>
+      </div></div>';
     }
     
     echo '<div class="project"><a id="add-project" class="add-project-link" href="#"><span>create new project...</span></a></div>';
