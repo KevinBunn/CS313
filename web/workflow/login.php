@@ -14,7 +14,7 @@
 <body id="body">
   <div class="login-container">
     <h1 id="login-title">Login</h1>
-    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
+    <form class="front-page-form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
         <input class="custom-input" type="text" name="username"  placeholder="username"><br>
         <input class="custom-input" type="password" name="password" placeholder="password"><br>
         <input type="submit">
@@ -40,7 +40,7 @@
         echo "<p style=\"color: red\">Username or Password is incorrect</p>";
     }
   ?>
-    <div><a href="signup.php">or signup</a></div>
+    <div id="signup-link"><a href="signup.php">or signup</a></div>
     </div>
 </body>
 </html>

@@ -14,6 +14,9 @@ html {
   
 }
 */
+.front-page-form {
+  text-align: center;
+}
 .custom-input {
   height: 25px;
   background-color: #FFFFFF;
