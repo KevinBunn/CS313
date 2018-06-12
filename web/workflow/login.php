@@ -17,7 +17,7 @@
     <form class="front-page-form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
         <input class="custom-input" type="text" name="username"  placeholder="username"><br>
         <input class="custom-input" type="password" name="password" placeholder="password"><br>
-        <div id="signup-link"><a class="front-page-button" href="signup.php">or signup</a>
+        <div id="button-row"><a class="front-page-button" href="signup.php">Signup</a>
         <input class="front-page-button" type="submit" value="Login">
         </div>
     </form>
