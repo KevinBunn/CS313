@@ -25,7 +25,7 @@
   <a class="navbar-brand" href="dashboard.php">Back To Dashboard</a>
   <ul class="navbar-nav ml-auto">
     <li class="nav-item">
-      <a type="btn-sm" class="nav-link" href="logout.php">Logout</a>
+      <a type="btn btn-sm" class="nav-link" href="logout.php">Logout</a>
     </li>
   </ul>
 </nav>
