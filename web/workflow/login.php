@@ -15,8 +15,8 @@
   <div class="login-container">
     <h1 id="login-title">Login</h1>
     <form class="front-page-form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
-        <input class="custom-input" type="text" name="username"  placeholder="username"><br>
-        <input class="custom-input" type="password" name="password" placeholder="password"><br>
+        <input class="custom-input" type="text" name="username"  placeholder="Username"><br>
+        <input class="custom-input" type="password" name="password" placeholder="Password"><br>
         <div id="button-row"><a class="front-page-button" href="signup.php">Signup</a>
         <input class="front-page-button" type="submit" value="Login">
         </div>

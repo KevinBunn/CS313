@@ -10,7 +10,7 @@
 <body id="body">
   <div class="login-container">
     <h1 id="login-title">Signup</h1>
-    <form action="add_user.php" method="post">
+    <form class="front-page-form" action="add_user.php" method="post">
         <input class="custom-input" type="text" name="first-name" placeholder="First Name"><br>
         <input class="custom-input" type="text" name="last-name" placeholder="Last Name"><br>
         <input class="custom-input" type="text" name="username" placeholder="Username"><br>
