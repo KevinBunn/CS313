@@ -33,7 +33,7 @@
   
     if (isset($_POST["username"]) && isset($_POST["password"])) {
       $successful_login = FALSE;
-      if ($rows[0]["username"] == $_POST["username"] && password_verify($rows[0]["password"] == $_POST["password"]))
+      if ($rows[0]["username"] == $_POST["username"] && password_verify($rows[0]["password"], $_POST["password"]))
           $successful_login = TRUE;
       if($successful_login){
         $_SESSION["user"] = $_POST["username"];
