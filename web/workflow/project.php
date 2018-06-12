@@ -49,15 +49,16 @@
           echo '<p>' . $_SESSION['category_error'] . '</p>';
         }
 
-        $category_query = "SELECT category_id, name FROM category WHERE project_id = $project_id";
+        $category_query = "SELECT category_id, name, project_id FROM category WHERE project_id = $project_id";
         $stmt = $db->prepare($category_query);
         $stmt->execute();
         $categories = $stmt->fetchALL(PDO::FETCH_ASSOC);
         
         foreach($categories as $category) {
-            echo '<div class="category"><div class="category-title">' . $category["name"] . '</div>';
-            
             $category_id = $category["category_id"];
+            echo '<div class="category"><div class="category-top"><div class="category-title">' . $category["name"] . '<a href="delete_category?project=' . $project_id . '&category=' . $category_id . '">X</a></div></div>';
+            
+            
             $task_query = "SELECT * FROM task WHERE category_id = $category_id";
             if (!$task_stmt = $db->prepare($task_query)) {
                 echo "prepare failed (" . $db->errno . ") " . $db->error;
