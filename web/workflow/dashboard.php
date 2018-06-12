@@ -51,7 +51,7 @@
       <div class="dropdown">  
       <button class="btn btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       ...
-      </button><div class="dropdown-menu" aria-labelledby="dropdownMenuButton"><a class="dropdown-item" href="delete_category.php?project=' . $project["project_id"] . '"></a></div></div>
+      </button><div class="dropdown-menu" aria-labelledby="dropdownMenuButton"><a class="dropdown-item" href="delete_category.php?project=' . $project["project_id"] . '">Delete Project</a></div></div>
       </div></div>';
     }
     
