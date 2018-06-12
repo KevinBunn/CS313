@@ -22,7 +22,7 @@
     <script type="text/javascript" src="dashboard.js" defer></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
   </head>
-<body>
+<body id="body">
   
   <nav class="navbar navbar-light bg-light justify-content-between">
   <a class="navbar-brand" href="#">Dashboard for
