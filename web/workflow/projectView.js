@@ -1,7 +1,7 @@
 var addCategory = document.getElementById("add-category");
 addCategory.addEventListener("click", function(event) {
   let newForm = document.createElement('form');
-    newForm.setAttribute("action", "add_category.php?project=<?php echo $project_id; ?>");
+    newForm.setAttribute("action", jsUrl);
     newForm.setAttribute("method", "post");
     let newTextInput = document.createElement('input');
     newTextInput.setAttribute("type", "text");

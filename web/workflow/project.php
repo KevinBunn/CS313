@@ -10,6 +10,7 @@
     }
 
     $project_id = $_GET['project'];
+    echo '<script type="text/javascript">var jsUrl = "add_category.php?project=' . $project_id . '";</script>';
 ?>
 <!DOCTYPE>
 <html>
