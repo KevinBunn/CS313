@@ -1,7 +1,7 @@
 var addCategory = document.getElementById("add-category");
 addCategory.addEventListener("click", function(event) {
   let newForm = document.createElement('form');
-    newForm.setAttribute("action", "add_category.php");
+    newForm.setAttribute("action", "add_category.php?project_id=");
     newForm.setAttribute("method", "post");
     let newTextInput = document.createElement('input');
     newTextInput.setAttribute("type", "text");
@@ -36,4 +36,9 @@ for (statusField of statusFields) {
     default:
         console.log("you're all noobs");
   }
+}
+
+function addNewCategory(project_id) {
+  xhttp.open("POST", "add_category.php", true);
+  xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 }
