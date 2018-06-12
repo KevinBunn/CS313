@@ -50,6 +50,7 @@ html {
   margin: 10px;
 }
 #button-row {
+  width: 100%;
   display: table;
   table-layout: fixed;
 }
