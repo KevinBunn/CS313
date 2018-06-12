@@ -35,7 +35,9 @@
       ?>
       <div class="category-column">
         <?php 
-        $project_id = $_GET['project'];
+        if(isset($_SESSION['category_error'])) {
+          echo '<p>' . $_SESSION['category_error'] . '</p>';
+        }
 
         $category_query = "SELECT category_id, name FROM category WHERE project_id = $project_id";
         $stmt = $db->prepare($category_query);
