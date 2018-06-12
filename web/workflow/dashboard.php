@@ -18,6 +18,7 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
     <script type="text/javascript" src="dashboard.js" defer></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
   </head>
