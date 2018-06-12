@@ -6,6 +6,7 @@
     else if ($_SESSION['user'] == "") {
       header('Location: logout.php');
     }
+
     require("dbConnect.php");
     $db = get_db();
     if (!isset($db)) {

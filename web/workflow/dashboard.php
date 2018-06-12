@@ -38,7 +38,6 @@
 </nav>
     <div class="project-row">
   <?php 
-      echo '<p>' . var_dump($_SESSION['user']) . '</p>';
     $current_username = $_SESSION['user'];
   
     $stmt = $db->prepare("SELECT p.project_id, name FROM project p INNER JOIN user_to_project ua ON ua.project_id = p.project_id INNER JOIN \"user\" u ON u.user_id = ua.user_id WHERE u.username = '$current_username';");
