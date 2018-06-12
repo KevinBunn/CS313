@@ -17,6 +17,7 @@
     $stmt->bindValue(':project_id', $projectId, PDO::PARAM_INT);
     $stmt->bindValue(':name', $categoryName, PDO::PARAM_STR);
     $stmt->bindValue(':date_created', $timestamp, PDO::PARAM_INT);
+    $stmt->execute();
     $rowsChanged = $stmt->rowCount();
     $stmt->closeCursor();
     return $rowsChanged;
