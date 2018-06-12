@@ -34,7 +34,7 @@
     if (isset($_POST["username"]) && isset($_POST["password"])) {
       $successful_login = FALSE;
       foreach ($rows as $row) {
-        if ($rows[0]["username"] == $_POST["username"] && password_verify($rows[0]["password"], $_POST["password"])) {
+        if ($row["username"] == $_POST["username"] && password_verify($row["password"], $_POST["password"])) {
             $successful_login = TRUE;
         }
       }
