@@ -5,26 +5,24 @@
 
 <html>
     <head>
-        
+      <link rel="stylesheet" type="text/css" href="styles.css">
     </head>
-<body>
-    <h1>Signup</h1>
+<body id="body">
+  <div class="login-container">
+    <h1 id="login-title">Signup</h1>
     <form action="add_user.php" method="post">
-        <label for='first-name'>First Name:</label>
-        <input type="text" name="first-name"><br>
-        <label for='last-name'>Last Name:</label>
-        <input type="text" name="last-name"><br>
-        <label for='username'>Username:</label> 
-        <input type="text" name="username"><br>
-        <label for='password'>Password:</label><input type="password" name="password"><br>
-        <label for='password-confirm'>Password Confirm:</label>
-        <input type="password" name="password-confirm">
-        <input type="submit">
+        <input class="custom-input" type="text" name="first-name" placeholder="First Name"><br>
+        <input class="custom-input" type="text" name="last-name" placeholder="Last Name"><br>
+        <input class="custom-input" type="text" name="username" placeholder="Username"><br>
+        <input class="custom-input" type="password" name="password" placeholder="Password"><br>
+        <input class="custom-input" type="password" name="password-confirm" placeholder="Password Confirm">
+        <input class="front-page-button" type="submit">
     </form>
     <?php
         if(isset($_SESSION['signup_error'])) {
             echo "<p style=\"color: red\">" . $_SESSION['signup_error'] . "</p>";
         }
     ?>
+    </div>
 </body>
 </html>
