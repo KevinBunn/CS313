@@ -19,7 +19,7 @@
         Password: <input type="password" name="password" value="P@ssw0rd1">
         <input type="submit">
     </form>
-  </div>
+
     <?php  
 
     $username = $_POST["username"];
@@ -41,5 +41,6 @@
     }
   ?>
     <div><a href="signup.php">or signup</a></div>
+    </div>
 </body>
 </html>
