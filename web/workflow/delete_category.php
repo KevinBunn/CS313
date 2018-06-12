@@ -15,8 +15,8 @@
     $deleteTaskStmt->execute();
     
     $deleteCategoryStmt = $db->prepare("DELETE FROM category WHERE category_id = :category_id");
-    deleteCategoryStmt->bindValue(':category_id', categoryId, PDO::PARAM_INT);
-    deleteCategoryStmt->execute();
+    $deleteCategoryStmt->bindValue(':category_id', categoryId, PDO::PARAM_INT);
+    $deleteCategoryStmt->execute();
 
     header('Location: project.php?project=' . $projectId);
 ?>
